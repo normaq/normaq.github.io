@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-04-24T14:45:21.414Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Norma ROM</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</title>
+    <link href="http://yoursite.com/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/"/>
+    <id>http://yoursite.com/2018/04/24/S8猎户通刷8.0国行移植/</id>
+    <published>2018-04-24T13:36:06.000Z</published>
+    <updated>2018-04-24T14:45:21.414Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 8.0.0<br>ROM作者    Norma<br>机型    SM-G95XF/FD/N  8895通刷<br>发布时间    2018年04月24日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>支持机型：<br>SM-G950F/FD/N<br>SM-G955F/FD/N</p><p>S8 8.0奥利奥<br>G950FXXU1ZQL8底包<br>Samsung Experience 9.0<br>删除knox限制<br>增加supersuroot授权<br>精简自带程序<br>移植国行特性<br>归属地黄页等显示<br>国行CSC配置<br>日历农历假期等显示<br>国行完整bixby支持语音唤醒<br>一些其他调整<br>流畅省电<br>具体功能查看截图</p><p>0.2更新：<br>修复输入法删除无效问题<br>更新S8最新国行输入法支持GIF表情<br>修复上一版进入移动网络设置错误问题<br>更新CSC网络配置<br>修复智能管理器应用程序权限无效问题<br>修复智能管理器安全扫描无效问题<br>修复听歌时微信发送语音可能出现的错误<br>修复发热异常和一些其他调整<br>aroma和一些默认配置调整<br>一些其他问题修复</p><p>0.3更新：<br>更新最新G950FXXU1ZQLE底包<br>修复上一版本可能出现recovery无法读取分区问题<br>重新修改刷机脚本<br>完整国行特性定制<br>新增通话记录短信归属地显示<br>破解字体限制（内置了字体包）<br>主题永久免费使用（直接在主题商店直接试用即可不会回到默认主题）<br>省电优化调整<br>一些其他调整</p><p>0.4更新：<br>更新最新G955FXXU1ZRA5底包<br>增加增强设置功能<br>状态栏时间左中右<br>时间显示秒<br>信号wifi图标左右显示<br>状态栏电池支持3M电池和官方显示切换<br>状态栏隐藏按钮锁屏 最近任务 退回键<br>通话设置通话记录归属地颜色等<br>一些其他自定义设置<br>官方更新新增应用程序角标大小等调节<br>新增下拉通知调节<br>通话记录归属地更新最新支持电信177号段等<br>supersu更新部分英文显示汉化<br>保留之前版本的全部功能<br>一些其他调整更新</p><p>0.5更新：<br>重新整合ROM<br>未合并deodex 系统更稳定<br>修复上一版S健康无法使用问题<br>修复上一版破音等问题<br>一些其他调整</p><p>1.0更新：<br>稳定欧版正式版CRAP官方底包<br>完整移植国行G9500ZCU2ZRAH<br>RENOVATE 6.0.0内核（感谢）<br>去除内核限制<br>安全补丁更新到2018-2月1日<br>magisk root授权15.4稳定<br>修复之前版本出现重启fc问题<br>增强设置新增导航栏高度自定义调节<br>bixby按键最近任务按键退回键自定义<br>修复之前版本出现的FC问题<br>一些其他调整<br>稳定超顺滑</p><p>2.0更新：<br>更新了时间自定义代码<br>修复时间显示会被挤掉显示不全的问题<br>新增状态栏默认沉浸支持<br>新增网速开关显示<br>系统框架调整<br>移植S9infinity动态壁纸<br>增加S9的铃声<br>省电流畅度和一些其他调整</p><p>3.0更新：<br>框架保留官方默认未合并<br>第一次开机很快不会出现卡顿现象<br>通话记录归属地显示恢复到默认位置<br>更新magisk 16.0<br>新增高级重启菜单恢复模式截图模式录制屏幕等<br>更新内核到RENOVATE6.0.1最新<br>优化游戏体验修改为S8配置</p><p>4.0更新：<br>更新三星商店最新程序<br>修复联通网络切换问题<br>下拉新增农历显示<br>机型配置修改为S8猎户座官方<br>提升游戏帧数性能<br>增加更多相机模式<br>一些其他调整</p><p>5.0更新：<br>更新移植最新G9550ZCU2CRD4底包<br>全部补丁更新到3月1号<br>软件全部更新到最新<br>修复骚扰拦截FC问题<br>更新机型支持王者VT模式（在游戏中心打开游戏）<br>magisk更新到16.3<br>一些其他调整</p><p>注意：</p><p>稳定</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>ROM:</p><p>MD5: FD50E3CB58005BF45B48A500079D10F8<br>SHA1: 3A8383D8B7FD511790A89EC4A424382A84FF3F51<br>CRC32: 230A29EA</p><p>云盘：<br><a href="https://pan.baidu.com/s/19K8uI9ZHUiJN9EsdpY6kpQ" target="_blank" rel="noopener">https://pan.baidu.com/s/19K8uI9ZHUiJN9EsdpY6kpQ</a></p><p>天翼云盘：<br><a href="https://cloud.189.cn/t/YRVbMfAF3eee" target="_blank" rel="noopener">https://cloud.189.cn/t/YRVbMfAF3eee</a></p><p>补丁：修复增强设置导航栏高度调节菜单<br><a href="https://cloud.189.cn/t/UjAfuuJr6vEv" target="_blank" rel="noopener">https://cloud.189.cn/t/UjAfuuJr6vEv</a></p><p>ROM自带google服务框架，需要自己安装play商店</p><p>内置应用程序大家联网使用两天在卸载，在此感谢大家对我的支持</p><p>完全隐藏导航栏补丁：（刷完ROM进入系统设置好之后再刷）</p><p><a href="https://cloud.189.cn/t/FrUNNjFbQVVf" target="_blank" rel="noopener">https://cloud.189.cn/t/FrUNNjFbQVVf</a></p><p>你需要自己安装按键助手或者辅助功能里互动敏捷开启悬浮菜单</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 8.0.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    SM-G95XF/FD/N  8895通刷&lt;br&gt;发布时间    2018年04月24日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="国际版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E9%99%85%E7%89%88S8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</title>
+    <link href="http://yoursite.com/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
+    <id>http://yoursite.com/2018/04/24/note8猎户座/</id>
+    <published>2018-04-24T13:36:06.000Z</published>
+    <updated>2018-04-24T15:22:52.982Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM�汾    android 8.0.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N  8895ͨˢ<br>����ʱ��    2018��04��24��</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM�汾    android 8.0.0&lt;br&gt;ROM����    Norma&lt;br&gt;����    SM-G95XF/FD/N  8895ͨˢ&lt;br&gt;����ʱ��    2018��04��24��&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="���ʰ�S8" scheme="http://yoursite.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%CA%B0%EF%BF%BDS8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>����ROM����������</title>
+    <link href="http://yoursite.com/2018/04/24/rom/"/>
+    <id>http://yoursite.com/2018/04/24/rom/</id>
+    <published>2018-04-24T12:43:43.202Z</published>
+    <updated>2018-04-24T13:27:34.085Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/04/23/hello-world/"/>
+    <id>http://yoursite.com/2018/04/23/hello-world/</id>
+    <published>2018-04-23T13:18:46.805Z</published>
+    <updated>2018-04-23T13:18:46.805Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
