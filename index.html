@@ -1,1 +1,1052 @@
-<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Hexo</title><meta name="description" content="A Blog Powered By Hexo"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.ico"><link rel="stylesheet" href="/css/prontera.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><header class="feature-header"><nav class="component-nav"><ul><div class="logo-container"><a href="/"><h2 class="title">Hexo</h2></a></div><a href="/" target="_self" class="li component-nav-item"><p class="selected">INDEX</p></a><a href="/archives" target="_self" class="li component-nav-item"><p>ARCHIVES</p></a><ul class="shortcut-icons"><a href="https://github.com/AngryPowman" target="_blank"><img src="/images/github.svg" class="icon"></a><a href="/atom.xml" target="_blank"><img src="/images/rss.svg" class="icon"></a></ul></ul></nav></header><main class="container"><div id="body-container"><div id="post-list" class="left"><div class="home post-list"><div class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/24/S8猎户通刷8.0国行移植/" class="post-title-link">S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</a></h2><div class="post-info">Apr 24, 2018</div><div class="post-content"></div><a href="/2018/04/24/S8猎户通刷8.0国行移植/" class="read-more">READ MORE</a></article></div><div class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/24/note8猎户座/" class="post-title-link">S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</a></h2><div class="post-info">Apr 24, 2018</div><div class="post-content"></div><a href="/2018/04/24/note8猎户座/" class="read-more">READ MORE</a></article></div><div class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/24/rom/" class="post-title-link">����ROM����������</a></h2><div class="post-info">Apr 24, 2018</div><div class="post-content"></div><a href="/2018/04/24/rom/" class="read-more">READ MORE</a></article></div><div class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2018/04/23/hello-world/" class="post-title-link">Hello World</a></h2><div class="post-info">Apr 23, 2018</div><div class="post-content"></div><a href="/2018/04/23/hello-world/" class="read-more">READ MORE</a></article></div></div></div><div id="sidebar" class="left"><div id="about-panel"><div class="info"><div class="title">AngryPowman</div><div class="url">http://yoursite.com</div><div class="bio">十年饮冰·难凉热血</div></div><img src="/images/avatar.png" class="avatar"></div><div id="friend-links-panel"><div class="panel-title"><p>LINKS</p></div><a href="http://powman.org" target="_blank" class="link-item"><div class="link-container"><div class="site-name">AngryPowman</div><div class="site-desc">This is a link</div></div></a><a href="http://powman.org" target="_blank" class="link-item"><div class="link-container"><div class="site-name">Demo Links</div><div class="site-desc">You can change this in your theme config</div></div></a></div></div></div><div class="clear"></div></main><footer class="footer-container"><div class="paginator"></div><div class="copyright"><p>© 2017 - 2018 <a href="http://yoursite.com">Norma ROM</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/AngryPowman/hexo-theme-prontera" target="_blank">hexo-theme-prontera</a>.</p></div></footer><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"angrypowman",'auto');ga('send','pageview');</script></body></html>
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Norma ROM" type="application/atom+xml" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Norma ROM">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Norma ROM">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Norma ROM">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Norma ROM</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Norma ROM</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/24/S8猎户通刷8.0国行移植/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Norma ROM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Norma ROM">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/24/S8猎户通刷8.0国行移植/" itemprop="url">S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T21:36:06+08:00">
+                2018-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>ROM版本    android 8.0.0<br>ROM作者    Norma<br>机型    SM-G95XF/FD/N  8895通刷<br>发布时间    2018年04月24日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>支持机型：<br>SM-G950F/FD/N<br>SM-G955F/FD/N</p>
+<p>S8 8.0奥利奥<br>G950FXXU1ZQL8底包<br>Samsung Experience 9.0<br>删除knox限制<br>增加supersuroot授权<br>精简自带程序<br>移植国行特性<br>归属地黄页等显示<br>国行CSC配置<br>日历农历假期等显示<br>国行完整bixby支持语音唤醒<br>一些其他调整<br>流畅省电<br>具体功能查看截图</p>
+<p>0.2更新：<br>修复输入法删除无效问题<br>更新S8最新国行输入法支持GIF表情<br>修复上一版进入移动网络设置错误问题<br>更新CSC网络配置<br>修复智能管理器应用程序权限无效问题<br>修复智能管理器安全扫描无效问题<br>修复听歌时微信发送语音可能出现的错误<br>修复发热异常和一些其他调整<br>aroma和一些默认配置调整<br>一些其他问题修复</p>
+<p>0.3更新：<br>更新最新G950FXXU1ZQLE底包<br>修复上一版本可能出现recovery无法读取分区问题<br>重新修改刷机脚本<br>完整国行特性定制<br>新增通话记录短信归属地显示<br>破解字体限制（内置了字体包）<br>主题永久免费使用（直接在主题商店直接试用即可不会回到默认主题）<br>省电优化调整<br>一些其他调整</p>
+<p>0.4更新：<br>更新最新G955FXXU1ZRA5底包<br>增加增强设置功能<br>状态栏时间左中右<br>时间显示秒<br>信号wifi图标左右显示<br>状态栏电池支持3M电池和官方显示切换<br>状态栏隐藏按钮锁屏 最近任务 退回键<br>通话设置通话记录归属地颜色等<br>一些其他自定义设置<br>官方更新新增应用程序角标大小等调节<br>新增下拉通知调节<br>通话记录归属地更新最新支持电信177号段等<br>supersu更新部分英文显示汉化<br>保留之前版本的全部功能<br>一些其他调整更新</p>
+<p>0.5更新：<br>重新整合ROM<br>未合并deodex 系统更稳定<br>修复上一版S健康无法使用问题<br>修复上一版破音等问题<br>一些其他调整</p>
+<p>1.0更新：<br>稳定欧版正式版CRAP官方底包<br>完整移植国行G9500ZCU2ZRAH<br>RENOVATE 6.0.0内核（感谢）<br>去除内核限制<br>安全补丁更新到2018-2月1日<br>magisk root授权15.4稳定<br>修复之前版本出现重启fc问题<br>增强设置新增导航栏高度自定义调节<br>bixby按键最近任务按键退回键自定义<br>修复之前版本出现的FC问题<br>一些其他调整<br>稳定超顺滑</p>
+<p>2.0更新：<br>更新了时间自定义代码<br>修复时间显示会被挤掉显示不全的问题<br>新增状态栏默认沉浸支持<br>新增网速开关显示<br>系统框架调整<br>移植S9infinity动态壁纸<br>增加S9的铃声<br>省电流畅度和一些其他调整</p>
+<p>3.0更新：<br>框架保留官方默认未合并<br>第一次开机很快不会出现卡顿现象<br>通话记录归属地显示恢复到默认位置<br>更新magisk 16.0<br>新增高级重启菜单恢复模式截图模式录制屏幕等<br>更新内核到RENOVATE6.0.1最新<br>优化游戏体验修改为S8配置</p>
+<p>4.0更新：<br>更新三星商店最新程序<br>修复联通网络切换问题<br>下拉新增农历显示<br>机型配置修改为S8猎户座官方<br>提升游戏帧数性能<br>增加更多相机模式<br>一些其他调整</p>
+<p>5.0更新：<br>更新移植最新G9550ZCU2CRD4底包<br>全部补丁更新到3月1号<br>软件全部更新到最新<br>修复骚扰拦截FC问题<br>更新机型支持王者VT模式（在游戏中心打开游戏）<br>magisk更新到16.3<br>一些其他调整</p>
+<p>注意：</p>
+<p>稳定</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ROM:</p>
+<p>MD5: FD50E3CB58005BF45B48A500079D10F8<br>SHA1: 3A8383D8B7FD511790A89EC4A424382A84FF3F51<br>CRC32: 230A29EA</p>
+<p>云盘：<br><a href="https://pan.baidu.com/s/19K8uI9ZHUiJN9EsdpY6kpQ" target="_blank" rel="noopener">https://pan.baidu.com/s/19K8uI9ZHUiJN9EsdpY6kpQ</a></p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/YRVbMfAF3eee" target="_blank" rel="noopener">https://cloud.189.cn/t/YRVbMfAF3eee</a></p>
+<p>补丁：修复增强设置导航栏高度调节菜单<br><a href="https://cloud.189.cn/t/UjAfuuJr6vEv" target="_blank" rel="noopener">https://cloud.189.cn/t/UjAfuuJr6vEv</a></p>
+<p>ROM自带google服务框架，需要自己安装play商店</p>
+<p>内置应用程序大家联网使用两天在卸载，在此感谢大家对我的支持</p>
+<p>完全隐藏导航栏补丁：（刷完ROM进入系统设置好之后再刷）</p>
+<p><a href="https://cloud.189.cn/t/FrUNNjFbQVVf" target="_blank" rel="noopener">https://cloud.189.cn/t/FrUNNjFbQVVf</a></p>
+<p>你需要自己安装按键助手或者辅助功能里互动敏捷开启悬浮菜单</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/24/note8猎户座/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Norma ROM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Norma ROM">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/24/note8猎户座/" itemprop="url">S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T21:36:06+08:00">
+                2018-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>ROM�汾    android 8.0.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N  8895ͨˢ<br>����ʱ��    2018��04��24��</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/24/rom/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Norma ROM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Norma ROM">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/24/rom/" itemprop="url">����ROM����������</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-24T20:43:43+08:00">
+                2018-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/23/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Norma ROM">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Norma ROM">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/23/hello-world/" itemprop="url">Hello World</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-23T21:18:46+08:00">
+                2018-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Norma ROM</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Norma ROM</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
