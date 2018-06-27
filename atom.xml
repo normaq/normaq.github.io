@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-04T01:57:33.020Z</updated>
+  <updated>2018-06-27T12:43:26.619Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>s7国行A9</title>
+    <link href="http://yoursite.com/2018/06/27/s7%E5%9B%BD%E8%A1%8CA9/"/>
+    <id>http://yoursite.com/2018/06/27/s7国行A9/</id>
+    <published>2018-06-27T12:43:04.000Z</published>
+    <updated>2018-06-27T12:43:26.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    G9350 G9300<br>发布时间    2018年06月27日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>A9 V1:<br>基于官方RF5移植G8850ZCU1ARE9<br>A9默认运动壁纸<br>增加增强设置（和之前o系列一样的增强）<br>官方自带bixby支持<br>移植A9全局杜比音效支持<br>官方默认相机A9自带相机表情<br>安全补丁更新到6月1号<br>王者支持高帧吃鸡流畅<br>类似C系列版本</p><p>刷机教程：<br><a href="https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA" target="_blank" rel="noopener">https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA</a></p><p>天翼<br><a href="https://cloud.189.cn/t/3UBjUf2IRN32" target="_blank" rel="noopener">https://cloud.189.cn/t/3UBjUf2IRN32</a></p><p>刷8.0前置相机发黑的刷QL3基带：（进入系统后恢复出厂设置可以解决卡2不能用的问题）<br><a href="https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw" target="_blank" rel="noopener">https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw</a></p><p>注意：</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]</p><p>ROM:</p><p>由于最近网络下载丢包厉害<br>下载完成把ROM拖进MD5验证工具验证MD5是否正确如果跟我发的MD5不一样请重新下载以免刷入卡屏等其他问题<br>MD5验证工具下载：<a href="http://pan.baidu.com/s/1bGdouU" target="_blank" rel="noopener">http://pan.baidu.com/s/1bGdouU</a></p><p>MD5: 8A179BE18253B69DA20E62F1BFF92672<br>SHA1: FC8362DD32376C2D90D43531E072EADAFA8E515A<br>CRC32: C91B0883</p><p>云盘：</p><p><a href="https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g</a><br>天翼：</p><p><a href="https://cloud.189.cn/t/imMVFfNBZF3q" target="_blank" rel="noopener">https://cloud.189.cn/t/imMVFfNBZF3q</a></p><p>[/hide]</p><p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 8.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    G9350 G9300&lt;br&gt;发布时间    2018年06月27日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;刷机必看&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="S7国行版" scheme="http://yoursite.com/tags/S7%E5%9B%BD%E8%A1%8C%E7%89%88/"/>
+    
+  </entry>
   
   <entry>
     <title>s7国际版f1</title>
@@ -349,6 +376,31 @@
   </entry>
   
   <entry>
+    <title>S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</title>
+    <link href="http://yoursite.com/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
+    <id>http://yoursite.com/2018/04/24/note8猎户座/</id>
+    <published>2018-04-24T13:36:06.000Z</published>
+    <updated>2018-06-05T09:28:00.695Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>û�з��ִ���<br>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: 57124732571DED53DD2840981A2FD8F2<br>SHA1: 02E9A20DF55135ECDB450911BA00F3E382BC3CFB<br>CRC32: B81E179E</p><p>�������̣�</p><p><a href="https://cloud.189.cn/t/jqi6JbmmEJ7z" target="_blank" rel="noopener">https://cloud.189.cn/t/jqi6JbmmEJ7z</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/11j4Zenq1TuZu1x7FfSREWg" target="_blank" rel="noopener">https://pan.baidu.com/s/11j4Zenq1TuZu1x7FfSREWg</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>����ȥ������������ ������ǿ���ð������õײ�ͼ���³����� �������߶ȵ�����0<br>����������ȥ������<br>��re������ �ҵ�system build.prop���ı���ʽ�༭ ������� ����һ�����qemu.hw.mainkeys=1Ȼ������</p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM�汾    android 8.0&lt;br&gt;ROM����    Norma&lt;br&gt;����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ&lt;br&gt;����ʱ��    2018��05��06��&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockq
+      
+    
+    </summary>
+    
+    
+      <category term="archives" scheme="http://yoursite.com/tags/archives/"/>
+    
+  </entry>
+  
+  <entry>
     <title>S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</title>
     <link href="http://yoursite.com/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/"/>
     <id>http://yoursite.com/2018/04/24/S8猎户通刷8.0国行移植/</id>
@@ -371,31 +423,6 @@
     
     
       <category term="国际版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E9%99%85%E7%89%88S8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</title>
-    <link href="http://yoursite.com/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
-    <id>http://yoursite.com/2018/04/24/note8猎户座/</id>
-    <published>2018-04-24T13:36:06.000Z</published>
-    <updated>2018-06-05T09:28:00.695Z</updated>
-    
-    <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>û�з��ִ���<br>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: 57124732571DED53DD2840981A2FD8F2<br>SHA1: 02E9A20DF55135ECDB450911BA00F3E382BC3CFB<br>CRC32: B81E179E</p><p>�������̣�</p><p><a href="https://cloud.189.cn/t/jqi6JbmmEJ7z" target="_blank" rel="noopener">https://cloud.189.cn/t/jqi6JbmmEJ7z</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/11j4Zenq1TuZu1x7FfSREWg" target="_blank" rel="noopener">https://pan.baidu.com/s/11j4Zenq1TuZu1x7FfSREWg</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>����ȥ������������ ������ǿ���ð������õײ�ͼ���³����� �������߶ȵ�����0<br>����������ȥ������<br>��re������ �ҵ�system build.prop���ı���ʽ�༭ ������� ����һ�����qemu.hw.mainkeys=1Ȼ������</p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ROM�汾    android 8.0&lt;br&gt;ROM����    Norma&lt;br&gt;����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ&lt;br&gt;����ʱ��    2018��05��06��&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockq
-      
-    
-    </summary>
-    
-    
-      <category term="archives" scheme="http://yoursite.com/tags/archives/"/>
     
   </entry>
   
