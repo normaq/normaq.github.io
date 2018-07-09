@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-06-27T12:43:26.619Z</updated>
+  <updated>2018-07-09T09:02:28.598Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>S7猎户座S9移植</title>
+    <link href="http://yoursite.com/2018/07/09/S7%E7%8C%8E%E6%88%B7%E5%BA%A7S9%E7%A7%BB%E6%A4%8D/"/>
+    <id>http://yoursite.com/2018/07/09/S7猎户座S9移植/</id>
+    <published>2018-07-09T09:01:56.000Z</published>
+    <updated>2018-07-09T09:02:28.598Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型[td]Galaxy S7 SM-G930F/S/L/K/W8    Galaxy S7edge SM-G935F/S/L/K/W8[/td]<br>发布时间    2018年07月09日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>S9 v1:<br>完整移植S9 G9600ZCU1ARBH<br>magisk 16.0 root<br>纯官方S9<br>去除虚拟按键显示<br>S8相机移植支持宠物面具功能<br>更多自己体验</p><p>V2更新：<br>更新最新S9 G9650ZCU1ARC2<br>安全补丁更新到20180201<br>增加增强设置<br>修复随机震动问题<br>修复键盘灯不亮问题<br>修复高清语音<br>一些其他调整</p><p>V3更新：<br>基于官方最新G935FXXU2ERCB底包<br>移植国行S9+ G9650ZCU2ARC6<br>修复手机振动问题<br>移植S9相机贴纸功能<br>增强设置调整<br>修复可能出现的随机重启问题<br>电池和自动亮度调整<br>修复在强光下可能无法打开手机问题<br>息屏提醒触摸修复（双击息屏时间即可）</p><p>V4更新：<br>修复切换网速无法换回4G问题<br>修复息屏提醒触摸<br>修复部分机型可能出现死机问题<br>增强设置新增功能<br>按键支持bixby按键自定义（bixby唤醒不要启动否则会反复fc）<br>修复无法唤醒相机问题<br>修复音效控制无效的问题<br>增加短信归属地显示<br>一些其他细节修改调整</p><p>v5更新：<br>更新最新官方RE8底包<br>修复快速充电问题<br>新增通话延迟设置<br>新增S9bixby视觉<br>内核更换自编译内核<br>王者吃鸡流程运行<br>省电优化调整</p><p>V6更新：<br>更新移植最新S9+ RE6<br>安全补丁更新到5月1号<br>机型游戏帧数优化调整<br>移植S9相机（支持S9 AR Emoji特效拍摄）<br>框架特效ssrm调整<br>修复bixby视觉不稳定问题<br>修复视频分享投屏（未测试）<br>一些其他细节调整</p><p>V7更新：<br>移植最新国际版G965FXXU1ARD4<br>信号4格官方默认样式<br>顺滑省电<br>移植全局杜比音效支持<br>改进3M电池白色样式支持沉浸<br>3M电池设置全部汉化（感谢累大）<br>新增时间大小调节和样式修改<br>一些其他细节调整和更新</p><p>v8更新：<br>修复锁屏问题<br>修复信号居左显示问题<br>修复增强设置按键问题<br>一些其他修复调整</p><p>错误：bixby语音唤醒（不要设置bixby语音唤醒或导致手机崩溃）</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]</p><p>ROM:</p><p>百度云：<br><a href="https://pan.baidu.com/s/197S-jCVHGrSE56_VCMxytg" target="_blank" rel="noopener">https://pan.baidu.com/s/197S-jCVHGrSE56_VCMxytg</a></p><p>天翼云盘：</p><p><a href="https://cloud.189.cn/t/Y3MBFfNBbmae" target="_blank" rel="noopener">https://cloud.189.cn/t/Y3MBFfNBbmae</a></p><p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p><p>[/hide]</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 8.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型[td]Galaxy S7 SM-G930F/S/L/K/W8    Galaxy S7edge SM-G935F/S/L/K/W8[/td]&lt;br&gt;发布时间    2018年07月09
+      
+    
+    </summary>
+    
+    
+      <category term="S7国际版" scheme="http://yoursite.com/tags/S7%E5%9B%BD%E9%99%85%E7%89%88/"/>
+    
+  </entry>
   
   <entry>
     <title>s7国行A9</title>
@@ -376,31 +399,6 @@
   </entry>
   
   <entry>
-    <title>S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</title>
-    <link href="http://yoursite.com/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
-    <id>http://yoursite.com/2018/04/24/note8猎户座/</id>
-    <published>2018-04-24T13:36:06.000Z</published>
-    <updated>2018-07-07T00:38:51.504Z</updated>
-    
-    <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: 344D1881155A2D46ADAF0B9F1238AC98<br>SHA1: 6BE77D4E0EBB5749336EB2E2C9A14FF56E5FA0FB<br>CRC32: 7A3EC846</p><p>�������̣�<br><a href="https://cloud.189.cn/t/ZfUzEb7NZbMr" target="_blank" rel="noopener">https://cloud.189.cn/t/ZfUzEb7NZbMr</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/16Q9b5OWSggVhmbbZS1_w7A" target="_blank" rel="noopener">https://pan.baidu.com/s/16Q9b5OWSggVhmbbZS1_w7A</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ROM�汾    android 8.0&lt;br&gt;ROM����    Norma&lt;br&gt;����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ&lt;br&gt;����ʱ��    2018��05��06��&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockq
-      
-    
-    </summary>
-    
-    
-      <category term="archives" scheme="http://yoursite.com/tags/archives/"/>
-    
-  </entry>
-  
-  <entry>
     <title>S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</title>
     <link href="http://yoursite.com/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/"/>
     <id>http://yoursite.com/2018/04/24/S8猎户通刷8.0国行移植/</id>
@@ -423,6 +421,31 @@
     
     
       <category term="国际版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E9%99%85%E7%89%88S8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>S8S8+�Ի�ͨˢ8.0��ǿ��˳������RD4��ֲS9����</title>
+    <link href="http://yoursite.com/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
+    <id>http://yoursite.com/2018/04/24/note8猎户座/</id>
+    <published>2018-04-24T13:36:06.000Z</published>
+    <updated>2018-07-07T00:38:51.504Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: 344D1881155A2D46ADAF0B9F1238AC98<br>SHA1: 6BE77D4E0EBB5749336EB2E2C9A14FF56E5FA0FB<br>CRC32: 7A3EC846</p><p>�������̣�<br><a href="https://cloud.189.cn/t/ZfUzEb7NZbMr" target="_blank" rel="noopener">https://cloud.189.cn/t/ZfUzEb7NZbMr</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/16Q9b5OWSggVhmbbZS1_w7A" target="_blank" rel="noopener">https://pan.baidu.com/s/16Q9b5OWSggVhmbbZS1_w7A</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM�汾    android 8.0&lt;br&gt;ROM����    Norma&lt;br&gt;����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ&lt;br&gt;����ʱ��    2018��05��06��&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockq
+      
+    
+    </summary>
+    
+    
+      <category term="archives" scheme="http://yoursite.com/tags/archives/"/>
     
   </entry>
   
