@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-09-12T03:29:16.300Z</updated>
+  <updated>2018-07-09T09:02:28.598Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>config</title>
-    <link href="http://yoursite.com/2018/09/12/config/"/>
-    <id>http://yoursite.com/2018/09/12/config/</id>
-    <published>2018-09-12T03:28:45.000Z</published>
-    <updated>2018-09-12T03:29:16.300Z</updated>
-    
-    <content type="html"><![CDATA[<p><version>1.0000</version>—–这里是你的版本号</p><p><explain>1.修复已知BUG!!!<br>客服QQ：2644108352</explain>—–这里是更新内容</p><p><update><a href="http://yangkun.hebsn.net/hyys/appxz/gxhyys.apk" target="_blank" rel="noopener">http://yangkun.hebsn.net/hyys/appxz/gxhyys.apk</a></update>—–这里是更新软件的下载地址</p><p><analysis><a href="http://y.mt2t.com/lines?url=" target="_blank" rel="noopener">http://y.mt2t.com/lines?url=</a></analysis>—–这里是解析接口1</p><p><analysis2><a href="http://www.714xy.com/vipjx/index.php?url=" target="_blank" rel="noopener">http://www.714xy.com/vipjx/index.php?url=</a></analysis2>—–这里是解析接口2</p><p><analysis3><a href="http://www.147xy.top/24v/index.php/?url=" target="_blank" rel="noopener">http://www.147xy.top/24v/index.php/?url=</a></analysis3>—–这里是解析接口3</p><p><text>我正在使用#免VIP看视频#不用开通VIP会员账号,直接观看全网VIP视频!省钱利器!!!安卓版软件下载地址：<a href="http://yangkun.hebsn.net/hyys/appxz/hyys.apk" target="_blank" rel="noopener">http://yangkun.hebsn.net/hyys/appxz/hyys.apk</a></text>—–这里是分享内容</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;version&gt;1.0000&lt;/version&gt;—–这里是你的版本号&lt;/p&gt;
-&lt;p&gt;&lt;explain&gt;1.修复已知BUG!!!&lt;br&gt;客服QQ：2644108352&lt;/explain&gt;—–这里是更新内容&lt;/p&gt;
-&lt;p&gt;&lt;update&gt;&lt;a href=&quot;http://yan
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>S7猎户座S9移植</title>
