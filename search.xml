@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>[ROM][9.0]SM-N960F/DS, SM-N960N国行特性官方SC1增强设置三卡支持V1</title>
+      <link href="/2019/03/29/ROM-9-0-SM-N960F-DS-SM-N960N%E5%9B%BD%E8%A1%8C%E7%89%B9%E6%80%A7%E5%AE%98%E6%96%B9SC1%E5%A2%9E%E5%BC%BA%E8%AE%BE%E7%BD%AE%E4%B8%89%E5%8D%A1%E6%94%AF%E6%8C%81V1/"/>
+      <url>/2019/03/29/ROM-9-0-SM-N960F-DS-SM-N960N%E5%9B%BD%E8%A1%8C%E7%89%B9%E6%80%A7%E5%AE%98%E6%96%B9SC1%E5%A2%9E%E5%BC%BA%E8%AE%BE%E7%BD%AE%E4%B8%89%E5%8D%A1%E6%94%AF%E6%8C%81V1/</url>
+      
+        <content type="html"><![CDATA[<p>ROM版本    android 9.0<br>ROM作者    Norma<br>机型    Galaxy Note9: SM-N960F/DS, SM-N960N<br>发布时间    2019年03月26日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>V1更新：<br>N960FXXS2CSC1最新版本定制<br>本地化归属地显示<br>国行csc配置<br>天气定位<br>国行黄页显示<br>国行时钟<br>国行日历农历显示<br>国行智能管理器<br>完整国行特效功能<br>magisk root 18.1 刷完开机之后重启一次获取完整root<br>添加了S10壁纸<br>增强设置添加<br>隐藏导航栏后可以到增强设置导航栏调整到0即可实现图标下沉</p><p>刷机教程：</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>ROM:</p><p>天翼云盘：<br><a href="https://cloud.189.cn/t/iMVNze7FvAvi" target="_blank" rel="noopener">https://cloud.189.cn/t/iMVNze7FvAvi</a></p><p>云盘：<br>链接：<a href="https://pan.baidu.com/s/1Rs1Bye1zC604wpzVZZM0ZQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1Rs1Bye1zC604wpzVZZM0ZQ</a><br>提取码：uku1 </p><p>三卡合一补丁：如果你破解了三卡可以刷这个补丁</p><p>链接：<a href="https://pan.baidu.com/s/1tJMvq63reyqsW_VaaN-JJA" target="_blank" rel="noopener">https://pan.baidu.com/s/1tJMvq63reyqsW_VaaN-JJA</a><br>提取码：7d2n </p><p>内置应用希望大家联网支持使用几天。谢谢</p><blockquote><blockquote><blockquote><p>截图赏析<br><img src="http://i2.bvimg.com/631320/7e8efad1c6d84921.png"></p></blockquote></blockquote></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Note9 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OnePlus</title>
       <link href="/2019/03/29/OnePlus/"/>
       <url>/2019/03/29/OnePlus/</url>
@@ -43,6 +62,12 @@
         <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    G9350 G9300<br>发布时间    2018年06月27日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>A9 V1:<br>基于官方RF5移植G8850ZCU1ARE9<br>A9默认运动壁纸<br>增加增强设置（和之前o系列一样的增强）<br>官方自带bixby支持<br>移植A9全局杜比音效支持<br>官方默认相机A9自带相机表情<br>安全补丁更新到6月1号<br>王者支持高帧吃鸡流畅<br>类似C系列版本</p><p>刷机教程：<br><a href="https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA" target="_blank" rel="noopener">https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA</a></p><p>天翼<br><a href="https://cloud.189.cn/t/3UBjUf2IRN32" target="_blank" rel="noopener">https://cloud.189.cn/t/3UBjUf2IRN32</a></p><p>刷8.0前置相机发黑的刷QL3基带：（进入系统后恢复出厂设置可以解决卡2不能用的问题）<br><a href="https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw" target="_blank" rel="noopener">https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw</a></p><p>注意：</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]</p><p>ROM:</p><p>由于最近网络下载丢包厉害<br>下载完成把ROM拖进MD5验证工具验证MD5是否正确如果跟我发的MD5不一样请重新下载以免刷入卡屏等其他问题<br>MD5验证工具下载：<a href="http://pan.baidu.com/s/1bGdouU" target="_blank" rel="noopener">http://pan.baidu.com/s/1bGdouU</a></p><p>MD5: 8A179BE18253B69DA20E62F1BFF92672<br>SHA1: FC8362DD32376C2D90D43531E072EADAFA8E515A<br>CRC32: C91B0883</p><p>云盘：</p><p><a href="https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g</a><br>天翼：</p><p><a href="https://cloud.189.cn/t/imMVFfNBZF3q" target="_blank" rel="noopener">https://cloud.189.cn/t/imMVFfNBZF3q</a></p><p>[/hide]</p><p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> S7国行版 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -135,7 +160,7 @@
       
         <tags>
             
-            <tag> Note8国行版 </tag>
+            <tag> tags </tag>
             
         </tags>
       
@@ -271,25 +296,6 @@
     
     
     <entry>
-      <title>Note8s8s8+�ٷ����ư�</title>
-      <link href="/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
-      <url>/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/</url>
-      
-        <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>11.0���£�<br>��������N950FXXS3CRF6�װ�<br>��ǿ��������������ʾ����<br>���������������ƿ���λ��ѡ��<br>������������ֱ��ָ�ƹ���<br>״̬������ͼ������ʡ�������ͼ������<br>������ֲS9ȫ�ֶű�֧�֣���Ҫ�������<br>ɾ��S8S8+����SPenѡ��<br>����������������<br>��������S9����<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: F59D5D9D548D9031022E52E20AB0CA54<br>SHA1: B700952CD7E80B1FE7E3ED749E028B98B9FFD1D2<br>CRC32: 81D56E3A</p><p>�������̣�<br><a href="https://cloud.189.cn/t/f2Ifqy2eUNRv" target="_blank" rel="noopener">https://cloud.189.cn/t/f2Ifqy2eUNRv</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Note8���ʰ� </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</title>
       <link href="/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/"/>
       <url>/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/</url>
@@ -301,6 +307,25 @@
         <tags>
             
             <tag> s8rom </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Note8s8s8+�ٷ����ư�</title>
+      <link href="/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
+      <url>/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/</url>
+      
+        <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>11.0���£�<br>��������N950FXXS3CRF6�װ�<br>��ǿ��������������ʾ����<br>���������������ƿ���λ��ѡ��<br>������������ֱ��ָ�ƹ���<br>״̬������ͼ������ʡ�������ͼ������<br>������ֲS9ȫ�ֶű�֧�֣���Ҫ�������<br>ɾ��S8S8+����SPenѡ��<br>����������������<br>��������S9����<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: F59D5D9D548D9031022E52E20AB0CA54<br>SHA1: B700952CD7E80B1FE7E3ED749E028B98B9FFD1D2<br>CRC32: 81D56E3A</p><p>�������̣�<br><a href="https://cloud.189.cn/t/f2Ifqy2eUNRv" target="_blank" rel="noopener">https://cloud.189.cn/t/f2Ifqy2eUNRv</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Note8���ʰ� </tag>
             
         </tags>
       
@@ -326,7 +351,7 @@
       <link href="/2018/04/23/hello-world/"/>
       <url>/2018/04/23/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="hljs highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
       
       
       
