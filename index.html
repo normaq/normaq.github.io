@@ -1,96 +1,1477 @@
-{% extends "_layout.njk" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Norma ROM</title>
+  
+  
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/page.css") }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/post.css") }}">
-{% endblock %}
+  
+  <link rel="alternate" href="/atom.xml" title="Norma ROM">
+  
 
-{% block title %}{{ config.title }}{% if config.subtitle %} - {{ config.subtitle }}{% endif %}{% endblock %}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
 
-{% block content %}
-{% set comment = false %}
-<div id="index" class="index page">
-  {% for post in page.posts.toArray() %}
-  <article class="article post card{% if theme.animate %} animate{% endif %}" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="{{ config.url }}{{ url_for(post.path) }}">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <meta itemprop="name" content="{{ config.author }}">
-        <meta itemprop="description" content="{{ config.description }}">
-        <meta itemprop="image" content="{{ url_for( theme.avatar) }}">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="{{ config.title }}">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="{{ url_for(post.path) }}" itemprop="url">{{ post.title }}</a>
-      </h1>
-      <div class="post-meta">
-        {% if post.date %}
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{{ date(post.date, config.date_format) }} {{ time(post.date, config.time_format) }}</time></span>
-        </span>
-        {% endif %}
-        {% if post.categories and post.categories.toArray().length %}
-        {% if post.date %}
-        <span class="post-meta-divider divider">|</span>
-        {% endif %}
-        <span class="post-categories">
-          {# About `-`: https://mozilla.github.io/nunjucks/cn/templating.html#part-861ece9d8e5ce60c #}
-          {% for cat in post.categories.toArray() -%}
-          {% if loop.first %}<i class="far fa-folder-open"></i>{% else %}<i class="fas fa-angle-right"></i>{% endif %}<span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="{{ url_for(cat.path) }}" itemprop="url" rel="index"><span itemprop="name">{{ cat.name }}</span></a></span>
-          {%- endfor %}
-        </span>
-        {% endif %}
-        {% if post.comment !== false and theme.comment.enable %}
-        {% if theme.comment.disqus_shortname %}
-        {% if post.categories or post.date %}
-        <span class="post-meta-divider divider">|</span>
-        {% endif %}
-        <span class="post-comment-count">
-          <i class="far fa-comments"></i><span><a href="{{ url_for(post.path) }}#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="{{ post.path }}" itemprop="commentCount"></span></a></span>
-        </span>
-        {% endif %}
-        {% endif %}
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      {% if post.excerpt  %}
-      {{ post.excerpt }}
-      {% elif post.description %}
-      {{ post.description }}
-      {% elif theme.auto_excerpt %}
-      {{ post.content.substring(0, theme.auto_excerpt) }}
-      {% else %}
-      {{ post.content }}
-      {% endif %}
-    </main>
-    <footer class="post-footer">
-      {% if post.tags and post.tags.toArray().length %}
-      <div class="post-tags">
-        {% for tag in post.tags.toArray() %}
-        <a class="post-tag button" href="{{ url_for(tag.path) }}" rel="tag"><i class="fas fa-tags"></i>{{ tag.name }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </footer>
-  </article>
-  {% endfor %}
-  {% if page.prev or page.next %}
-  <nav class="pagination">
-    {{
-      paginator({
-        prev_text: "<i class=\"fas fa-angle-left\" aria-label=\"" + __("accessibility.prev_page") + "\"></i>",
-        next_text: "<i class=\"fas fa-angle-right\" aria-label=\"" + __("accessibility.next_page") + "\"></i>",
-        mid_size: 1
-      })
-    }}
-  </nav>
-  {% endif %}
-  {% if theme.comment.enable %}
-  {% include "comment.njk" %}
-  {% endif %}
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
-{% endblock %}
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Norma ROM
+        
+      </a>
+			<div class='menu'>
+				<ul class='h-list'>
+          
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+
+
+
+  <section class="post-list">
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+
+
+      
+
+      
+
+      
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/07/09/S7猎户座S9移植/">
+              
+                  S7猎户座S9移植
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-07-09
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型[td]Galaxy S7 SM-G930F/S/L/K/W8    Galaxy S7edge SM-G935F/S/L/K/W8[/td]<br>发布时间    2018年07月09日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>S9 v1:<br>完整移植S9 G9600ZCU1ARBH<br>magisk 16.0 root<br>纯官方S9<br>去除虚拟按键显示<br>S8相机移植支持宠物面具功能<br>更多自己体验</p>
+<p>V2更新：<br>更新最新S9 G9650ZCU1ARC2<br>安全补丁更新到20180201<br>增加增强设置<br>修复随机震动问题<br>修复键盘灯不亮问题<br>修复高清语音<br>一些其他调整</p>
+<p>V3更新：<br>基于官方最新G935FXXU2ERCB底包<br>移植国行S9+ G9650ZCU2ARC6<br>修复手机振动问题<br>移植S9相机贴纸功能<br>增强设置调整<br>修复可能出现的随机重启问题<br>电池和自动亮度调整<br>修复在强光下可能无法打开手机问题<br>息屏提醒触摸修复（双击息屏时间即可）</p>
+<p>V4更新：<br>修复切换网速无法换回4G问题<br>修复息屏提醒触摸<br>修复部分机型可能出现死机问题<br>增强设置新增功能<br>按键支持bixby按键自定义（bixby唤醒不要启动否则会反复fc）<br>修复无法唤醒相机问题<br>修复音效控制无效的问题<br>增加短信归属地显示<br>一些其他细节修改调整</p>
+<p>v5更新：<br>更新最新官方RE8底包<br>修复快速充电问题<br>新增通话延迟设置<br>新增S9bixby视觉<br>内核更换自编译内核<br>王者吃鸡流程运行<br>省电优化调整</p>
+<p>V6更新：<br>更新移植最新S9+ RE6<br>安全补丁更新到5月1号<br>机型游戏帧数优化调整<br>移植S9相机（支持S9 AR Emoji特效拍摄）<br>框架特效ssrm调整<br>修复bixby视觉不稳定问题<br>修复视频分享投屏（未测试）<br>一些其他细节调整</p>
+<p>V7更新：<br>移植最新国际版G965FXXU1ARD4<br>信号4格官方默认样式<br>顺滑省电<br>移植全局杜比音效支持<br>改进3M电池白色样式支持沉浸<br>3M电池设置全部汉化（感谢累大）<br>新增时间大小调节和样式修改<br>一些其他细节调整和更新</p>
+<p>v8更新：<br>修复锁屏问题<br>修复信号居左显示问题<br>修复增强设置按键问题<br>一些其他修复调整</p>
+<p>错误：bixby语音唤醒（不要设置bixby语音唤醒或导致手机崩溃）</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]</p>
+<p>ROM:</p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/197S-jCVHGrSE56_VCMxytg" target="_blank" rel="noopener">https://pan.baidu.com/s/197S-jCVHGrSE56_VCMxytg</a></p>
+<p>天翼云盘：</p>
+<p><a href="https://cloud.189.cn/t/Y3MBFfNBbmae" target="_blank" rel="noopener">https://cloud.189.cn/t/Y3MBFfNBbmae</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>[/hide]</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国际版/"><i class="fas fa-hashtag fa-fw"></i>S7国际版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/06/27/s7国行A9/">
+              
+                  s7国行A9
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-06-27
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    G9350 G9300<br>发布时间    2018年06月27日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>A9 V1:<br>基于官方RF5移植G8850ZCU1ARE9<br>A9默认运动壁纸<br>增加增强设置（和之前o系列一样的增强）<br>官方自带bixby支持<br>移植A9全局杜比音效支持<br>官方默认相机A9自带相机表情<br>安全补丁更新到6月1号<br>王者支持高帧吃鸡流畅<br>类似C系列版本</p>
+<p>刷机教程：<br><a href="https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA" target="_blank" rel="noopener">https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA</a></p>
+<p>天翼<br><a href="https://cloud.189.cn/t/3UBjUf2IRN32" target="_blank" rel="noopener">https://cloud.189.cn/t/3UBjUf2IRN32</a></p>
+<p>刷8.0前置相机发黑的刷QL3基带：（进入系统后恢复出厂设置可以解决卡2不能用的问题）<br><a href="https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw" target="_blank" rel="noopener">https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw</a></p>
+<p>注意：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]</p>
+<p>ROM:</p>
+<p>由于最近网络下载丢包厉害<br>下载完成把ROM拖进MD5验证工具验证MD5是否正确如果跟我发的MD5不一样请重新下载以免刷入卡屏等其他问题<br>MD5验证工具下载：<a href="http://pan.baidu.com/s/1bGdouU" target="_blank" rel="noopener">http://pan.baidu.com/s/1bGdouU</a></p>
+<p>MD5: 8A179BE18253B69DA20E62F1BFF92672<br>SHA1: FC8362DD32376C2D90D43531E072EADAFA8E515A<br>CRC32: C91B0883</p>
+<p>云盘：</p>
+<p><a href="https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1MoYnoInjSJ8MD-u1wVLt_g</a><br>天翼：</p>
+<p><a href="https://cloud.189.cn/t/imMVFfNBZF3q" target="_blank" rel="noopener">https://cloud.189.cn/t/imMVFfNBZF3q</a></p>
+<p>[/hide]</p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国行版/"><i class="fas fa-hashtag fa-fw"></i>S7国行版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/06/04/s7国际版f1/">
+              
+                  s7国际版f1
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-06-04
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    8890 S7 S7edge通刷<br>发布时间    2018年06月04日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>F1：<br>移植N935FXXU2BRD4<br>国行特效增加<br>增加增强设置<br>支持bixby语音（不支持唤醒）<br>AROMA新增S9相机和官方相机可选<br>功能和特征和S9一样<br>省电流畅</p>
+<p>错误：bixby语音唤醒（不要设置bixby语音唤醒或导致手机崩溃）<br>不要更新游戏工具否则会不显示</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]</p>
+<p>MD5: 4554C087365A32F7628C0B913FC622EF<br>SHA1: 54D91FB62F559D1D3E4037D206E93218BCAFEA7C<br>CRC32: 35A0DC20</p>
+<p>ROM:</p>
+<p>百度云：</p>
+<p><a href="https://pan.baidu.com/s/1AD1s20Sjpk5Fcif4cTmu_g" target="_blank" rel="noopener">https://pan.baidu.com/s/1AD1s20Sjpk5Fcif4cTmu_g</a><br>天翼云盘：</p>
+<p><a href="https://cloud.189.cn/t/FVnqM3yqArae" target="_blank" rel="noopener">https://cloud.189.cn/t/FVnqM3yqArae</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>Moro 自定义内核支持调节内核喜欢的可以刷入：</p>
+<p><a href="https://cloud.189.cn/t/6ry6naaA3Qfi" target="_blank" rel="noopener">https://cloud.189.cn/t/6ry6naaA3Qfi</a></p>
+<p>[/hide]</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国际版/"><i class="fas fa-hashtag fa-fw"></i>S7国际版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/15/国际版S8移植S9/">
+              
+                  国际版S8移植S9
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-15
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    SM-G95XF/FD/N N950F/FDN  8895通刷<br>发布时间    2018年05月15日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>V1：<br>基于越南infinity-oreo底包内核（在此感谢）<br>移植国行G9600ZCU1ARBH<br>S8官方相机功能<br>纯官方S9<br>增强设置自定义添加<br>更多S9功能自己体验</p>
+<p>s9移植V2更新：<br>基于官方最新N950FXXU3CRC1底包<br>移植S9+国行最新G9650ZCU1ARC2<br>修复上一版耳机问题<br>修复Spen翻译 完整的N8 SPEN功能<br>增加增强设置<br>通话记录显示归属地<br>时间位置<br>按键自定义调整等等<br>一些其他调整自己体验</p>
+<p>S9v3更新：<br>新增高级重启菜单支持<br>修复联通卡移动网络切换2G后无法切换其他网络问题<br>网络信号配置调整<br>游戏配置修改为官方<br>机型版本号修改为s8官方<br>bixby视觉更新可以正常使用<br>修复wifi热点打开重启问题<br>自动亮度灵敏度调整<br>更快的面部识别和虹膜解锁<br>更新内核NK内核解决部分机型twrp无法识别内部储存问题<br>修复发热和耗电快问题<br>一些其他调整</p>
+<p>S9V4更新：<br>移植最新S9+ G9650ZCU2ARC6<br>安全补丁更新到最新<br>新增下拉农历<br>增强设置自定义按键代码更新<br>支持bixby按键自定义<br>修复息屏提醒时间显示会消失问题<br>SSRM机型配置调整<br>修复手写输入无效问题<br>更新magisk 16.3<br>新增S9相机贴纸<br>一些其他修改调整</p>
+<p>V5更新：<br>修复强光下亮度问题<br>修复缓解耗电发热问题<br>修复SD卡储存可能出现的问题<br>增强设置更新新功能<br>导航栏调整到0然后开启图标下沉开关即可隐藏导航栏<br>移植S9bixby视觉（新功能）<br>更换magisk为supersu pro版<br>S9信息支持归属地显示<br>修复fd双卡信号问题<br>王者支持VT模式<br>机型版本号修改为G9650<br>S8S8+内核更新NX R8<br>一些其他调整</p>
+<p>V6更新:<br>新增aroma刷机脚本机型选项<br>移植国际版S9<br>支持S9杜比音效<br>S9相机AR表情效果<br>移植S9相机（Note8放大2x功能远距离正常近距离会太大）<br>新增通话挂机延迟设置<br>游戏性能优化<br>流畅吃鸡王者稳定高帧<br>更新内核NK219（可以自己换喜欢的内核）</p>
+<p>V7更新：<br>magisk更换supersu（magisk会导致部分机器无法开机）<br>修复Note8相机问题<br>S8S8+无需刷相机补丁<br>修复自动亮度强光下黑屏问题<br>修复设置辅助功能服务开启fc问题<br>修复全局杜比音效<br>修复异常发热问题<br>跑马灯边框调整机型对应<br>S8S8+相机驱动更新<br>修复部分第三方字体无法安装问题<br>一些其他修改和调整</p>
+<p>V8更新：<br>换回S9国行底包<br>更新S9国行杜比音效驱动<br>修复虹膜面部解锁慢的问题<br>删除google服务框架（会导致耗电需要的可以自己单刷框架）<br>机型框架调整官方版本配置<br>修复内存储存分区读取问题包含otg和外置sd卡<br>省电优化调整<br>王者稳定60帧吃鸡流畅（刺激战场和全军出击）<br>增强设置新增虚拟按键横屏关闭和开启菜单（当虚拟按键高度调整到0时也希望横屏完全隐藏）<br>S8FD版本通话杂音修复<br>信号居左更新修复之前可能会显示两个信号问题<br>一些其他调整和修复</p>
+<p>错误：<br>锁屏设置里的<br>智能扫描（硬件不支持不能同时面部和虹膜一起）</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]<br>ROM:<br>MD5: D32519542551CE0772A9883C913FA510<br>SHA1: E0B34C2AEAED4698AE7E2C1104BA1E258F361DB8<br>CRC32: 6D3B7E78</p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/3IZvYvAZzyIb" target="_blank" rel="noopener">https://cloud.189.cn/t/3IZvYvAZzyIb</a></p>
+<p>云盘：</p>
+<p><a href="https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ</a></p>
+<p>内置应用程序希望大家帮忙联网使用两天后再删除，感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/国际版S8/"><i class="fas fa-hashtag fa-fw"></i>国际版S8</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/10/s8国行8ROM/">
+              
+                  s8国行8ROM
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-10
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    g9500 g9550 国行港版<br>发布时间    2018年05月10日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>1.0:<br>G9550 8.0 RD1官方底包定制<br>添加magisk 16.3 root授权（脸谱）<br>busybox支持<br>增加增强设置<br>通话记录短信归属地显示<br>S9壁纸移植<br>S9动态相机效果<br>破解系统签名显示<br>破解主题支持永久试用<br>破解第三方字体支持<br>开启更多相机功能<br>所有三星商店程序更新到最新<br>禁用knox<br>最新官方内核源代码编译宽松内核限制</p>
+<p>2.0更新：<br>更新G9550ZCU2CRD8最新<br>安全补丁更新到4月<br>mgaisk root更新16.4<br>增强设置新增一些实用功能<br>虚拟按键调节到0完全隐藏（开启启动器下沉开关图标下沉）<br>更新S9短信归属地显示<br>添加S9铃声等<br>一些其他调整</p>
+<p>刷机教程：<br><a href="https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w" target="_blank" rel="noopener">https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w</a></p>
+<p>感谢：<br>感谢累大的内核帮助支持<br>感谢U大的内核解决办法<br>感谢man大自定义</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>MD5: 0A329172DD4AA5B3DF610833EE087614<br>SHA1: DBC276058D0A6DBCA820482EF72DE8C1E086645D<br>CRC32: 1F5D636E</p>
+<p>ROM:</p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/IVJRjqjyq2Mb" target="_blank" rel="noopener">https://cloud.189.cn/t/IVJRjqjyq2Mb</a></p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g" target="_blank" rel="noopener">https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g</a></p>
+<p>内置软件希望大家联网使用两天感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/国行版S8/"><i class="fas fa-hashtag fa-fw"></i>国行版S8</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/02/S7猎户座8-0/">
+              
+                  S7S7edge猎户座8.0
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-02
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    单卡8890猎户座通刷支持FD版本<br>发布时间    2018年05月16日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>O1：<br>官方泄漏版G935FXXU2ERB4<br>去除内核加密显示（放心刷入不会导致内存分区无法读取）<br>magisk 16.0 root授权<br>通话记录归属地显示<br>短信显示归属地<br>国行网络定位<br>国行csc配置<br>国行智能管理器<br>支持应用程序锁<br>国行日历假期显示<br>下拉支持录制屏幕<br>更多国行特性</p>
+<p>o2更新：<br>G935FXXU2ERD5官方稳定版8.0<br>支持S7直屏和S7edge曲屏猎户座机型<br>去除加密分区限制<br>增加supersu root授权<br>增加busybox支持<br>增加增强设置<br>国行日历订阅<br>国行智能管理器应用锁等<br>移植S9动态infinity壁纸<br>S9铃声<br>S9相机贴纸<br>添加更多相机功能<br>破解主题永久试用<br>破解第三方字体支持<br>通话短信归属地显示<br>国行csc配置<br>一些其他调整</p>
+<p>o3更新：<br>更新增强设置新功能<br>按键修复无法双击唤醒相机问题<br>修复联通卡网络切换问题<br>新增S8bixby语音（不支持锁屏唤醒）<br>bixby支持增强设置按键唤醒<br>王者支持VT模式<br>移植S9短信程序<br>修复上一版打开相册提示错误问题</p>
+<p>o4更新：<br>更新官方最新G935FXXU2ERE8<br>修复应用程序许可无法开启问题<br>修复高级重启菜单屏幕录像和线刷模式无效问题<br>修复状态栏隐藏图标无效问题<br>修复S9短信贴纸<br>修复私密模式无法开启问题下拉新增开关<br>新编译内核内核权限permissive<br>支持S9相机<br>一些其他调整更新</p>
+<p>O5更新：<br>更新最新官方G935FXXU2EREM<br>修复bixby呼出可能造成状态栏停止的fc<br>修复高级重启菜单无效问题<br>保持之前全部功能</p>
+<p>O6更新：<br>修复应用锁无法打开问题<br>修复私密模式无法开启问题<br>修复bixby喊关闭出现状态栏崩溃问题<br>更新最近时间自定义代码支持显示日期等<br>更新信号左右代码修复之前可能会出现同时显示两个问题<br>更新3M电池新的样式支持沉浸变色<br>一些其他增强自定义调整更新</p>
+<p>O7更新：<br>新增锁屏天气显示<br>修复状态栏隐藏图标蓝牙、声音、闹钟、省电图标等<br>新增下拉流量显示控制开关<br>新增重启指纹解锁功能<br>修复状态栏网速不显示箭头问题<br>修复s9壁纸部分无法选择问题<br>更新最新S9官方短信<br>优化RAM预存占用问题<br>一些其他修改和调整<br>O6可以直接刷无需清空</p>
+<p>注意：三星商店不要更新游戏中心否则不会显示游戏工具</p>
+<p>O系列属于纯官方修改定制<br>V系列是S9移植</p>
+<p>7.0底包直接刷入即可</p>
+<p>感谢：<br>magisk<br>累累大神帮助<br>感谢man大神帮助</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>本帖隐藏的内容</p>
+<p>MD5: BEC197E417933CD548C2926FA1356E12<br>SHA1: 04DBE503105188843401E8A4279F6DD9BFF04F28<br>CRC32: 00143269</p>
+<p>ROM:</p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA" target="_blank" rel="noopener">https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA</a></p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/NF77RrvyiYra" target="_blank" rel="noopener">https://cloud.189.cn/t/NF77RrvyiYra</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>第三方字体补丁包卡刷：<br><a href="https://cloud.189.cn/t/YVzE3qbIzy6f" target="_blank" rel="noopener">https://cloud.189.cn/t/YVzE3qbIzy6f</a></p>
+<p>S9相机卡刷包：<br><a href="https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw</a></p>
+<p>google服务补丁：（需要到设置应用程序找到google服务权限全部开启否则会提示fc）<br><a href="https://cloud.189.cn/t/2EJ77rI7Vnuq" target="_blank" rel="noopener">https://cloud.189.cn/t/2EJ77rI7Vnuq</a></p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国际版/"><i class="fas fa-hashtag fa-fw"></i>S7国际版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/01/N8国行官方8-0定制/">
+              
+                  N8国行官方8.0定制
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-01
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>1.0：<br>基于官方N9500ZCU2CRD5底包制作<br>添加magisk root授权<br>添加busybox支持<br>精简系统自带的程序<br>添加增强设置<br>通话记录短信归属地显示<br>主题永久免费试用<br>破解第三方字体支持<br>官方RD5内核源编译宽松的内核权限<br>开启更多相机功能<br>S9相机贴纸<br>一些其他自定义调整</p>
+<p>2.0更新：<br>新增移植S9动态壁纸<br>移植S9短信<br>修复上一版归属地显示问题<br>增强设置更新新功能<br>支持导航栏调整到0图标下沉<br>一些其他调整</p>
+<p>3.0更新：<br>更新最新RF2最新底包<br>更新累大内核更换supersu<br>安全补丁更新到6月1号<br>增强设置新增功能</p>
+<p>感谢累累大神帮助<br>感谢U大的帮助</p>
+<p>刷机教程：<br><a href="https://cloud.189.cn/t/zUbAj2e6nUvy" target="_blank" rel="noopener">https://cloud.189.cn/t/zUbAj2e6nUvy</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ROM:<br>MD5: 049A608075B4DA48093532759B4B7161<br>SHA1: 5B16576A85572E2AB9714FFA3CDA21B8DD1FFD80<br>CRC32: A83B9D1E</p>
+<p>天翼云盘：</p>
+<p><a href="https://cloud.189.cn/t/F7f2IvNvYNVj" target="_blank" rel="noopener">https://cloud.189.cn/t/F7f2IvNvYNVj</a></p>
+<p>云盘：</p>
+<p><a href="https://pan.baidu.com/s/1xvA-tNsC2F8AnzYgwURt0Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1xvA-tNsC2F8AnzYgwURt0Q</a></p>
+<p>S9动态壁纸ROM默认N8官方壁纸（需要S9动态壁纸的可以直接刷完ROM直接刷这个补丁）<br><a href="https://pan.baidu.com/s/1NGeNmEWPzigNEWmyS0i2Yw" target="_blank" rel="noopener">https://pan.baidu.com/s/1NGeNmEWPzigNEWmyS0i2Yw</a></p>
+<p>内置应用希望大家联网支持使用几天。谢谢</p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/Note8国行版/"><i class="fas fa-hashtag fa-fw"></i>Note8国行版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/04/30/S7国行o/">
+              
+                  S7edge 8.0奥利奥官方定制增强设置 Norma
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-04-30
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>O1：<br>国行G9350官方泄漏版RC3定制<br>去除加密分区限制（twrp可以识别手机内存）<br>添加supersu root<br>添加busybox支持<br>去除三星定制软件<br>增加增强设置功能<br>通话记录归属地短信归属地等显示<br>破解主题商店<br>破解第三方字体支持<br>下拉农历等<br>其他修改自己体验吧</p>
+<p>o2更新：<br>更新到G9350ZCU2CRD3最新<br>去除内核开机验证<br>修复开机第一屏很慢的问题<br>移植S9infiniy壁纸<br>移植S9相机贴纸<br>开机相机更多功能支持<br>增强设置新增一些功能<br>保持之前功能<br>官方稳定</p>
+<p>O3更新：<br>更新增强设置新功能<br>按键修复无法双击唤醒相机问题<br>修复S健康无法启动问题<br>新增S8bixby语音（不支持锁屏唤醒）<br>bixby支持增强设置按键唤醒<br>王者支持VT模式<br>移植S9短信程序</p>
+<p>O4更新：<br>更新最新G9350ZCU2ZRF3底包<br>低热省电流畅<br>支持G9300G9350通刷<br>修复私密模式无法启动的问题<br>增强设置更新<br>新增通话挂机延迟设置<br>状态栏强制沉浸<br>新增状态栏隐藏蓝牙和闹钟图标<br>修复上一版bixby可能造成状态栏FC问题<br>保持之前全部功能</p>
+<p>O5更新：<br>更新最新国行G9350ZCU2ZRF5<br>状态栏时间新增样式大小调整<br>修复3M电池白色不会沉浸问题<br>保持之前的功能</p>
+<p>O6更新：<br>更新官方正式版G9350ZCU2CRF5<br>侧屏闪光圆角修正为直角<br>修复bixby喊关闭导致状态栏崩溃问题<br>更新状态栏信号切换代码修复上一版可能会同时显示两个问题<br>增强设置一些功能调整<br>保持之前全部功能</p>
+<p>O7更新：<br>新增锁屏天气显示<br>修复状态栏隐藏图标蓝牙、声音、闹钟、省电图标等<br>新增下拉流量显示控制开关<br>新增重启指纹解锁功能<br>修复状态栏网速不显示箭头问题<br>修复s9壁纸部分无法选择问题<br>更新最新S9官方短信<br>优化RAM预存占用问题<br>一些其他修改和调整<br>O6可以直接刷无需清空</p>
+<p>注意：<br>8.0底包基带和BL直接线刷twrprecovery卡刷ROM即可<br>三星商店里不要更新游戏工具，否则会不显示</p>
+<p>刷机教程：<br><a href="https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA" target="_blank" rel="noopener">https://pan.baidu.com/s/16zhkPPPtlv-LPBiFT4MuNA</a></p>
+<p>天翼<br><a href="https://cloud.189.cn/t/3UBjUf2IRN32" target="_blank" rel="noopener">https://cloud.189.cn/t/3UBjUf2IRN32</a></p>
+<p>刷8.0前置相机发黑的刷QL3基带：（进入系统后恢复出厂设置可以解决卡2不能用的问题）<br><a href="https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw" target="_blank" rel="noopener">https://pan.baidu.com/s/1mLW_QiSk-W0-kA0kTL0Guw</a></p>
+<p>注意：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]</p>
+<p>ROM:</p>
+<p>由于最近网络下载丢包厉害<br>下载完成把ROM拖进MD5验证工具验证MD5是否正确如果跟我发的MD5不一样请重新下载以免刷入卡屏等其他问题<br>MD5验证工具下载：<a href="http://pan.baidu.com/s/1bGdouU" target="_blank" rel="noopener">http://pan.baidu.com/s/1bGdouU</a><br>用山寨云下载的下载完请检查MD5是否正确，因为山寨云丢包几率很大</p>
+<p>MD5: 08A226C4B6F9BF7A54A331A779EF9A50<br>SHA1: 664DD4B2EB849684B68807413CB0ED3A51B37E52<br>CRC32: 2EC7B174</p>
+<p>云盘：<br><a href="https://pan.baidu.com/s/1vFGgNzcF_U3OgolMp3XfuQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1vFGgNzcF_U3OgolMp3XfuQ</a></p>
+<p>天翼：<br><a href="https://cloud.189.cn/t/J3mAFv3qmeEr" target="_blank" rel="noopener">https://cloud.189.cn/t/J3mAFv3qmeEr</a></p>
+<p>[/hide]</p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国行版/"><i class="fas fa-hashtag fa-fw"></i>S7国行版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/04/28/note5国行S8移植/">
+              
+                  【ROM】【7.0】N5国行韩版S6通刷S8+移植N8星空壁纸息屏Bixby23.0
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-04-28
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 7.0<br>ROM作者    Norma<br>机型    N9200 G9280  G9200/8/9 G9250 N920SLK<br>发布时间    2018年04月28日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>直接进入twrp卡刷即可<br>国行N9200 G9280<br>移植国行S8+ G9550ZCU1AQDF<br>完整国行S8+移植<br>感谢索马里海盗内核支持<br>通话记录归属地<br>短信显示归属地<br>增加一些简单的增强设置<br>S8跑马灯支持<br>S8+相机（双击电源键启动）<br>增加7.0 spen功能<br>其他功能自己测试</p>
+<p>2.0更新：<br>修复上一版部分机器刷入卡第二屏问题<br>更新root授权<br>修复NFC功能<br>新增AOD息屏提醒支持自动亮度<br>修复SPEN翻译问题<br>新增SPen智能备忘录<br>修复息屏快写功能<br>新增N5相机和S8相机可选<br>(N5相机支持双击home键打开相机S8需要双击电源键)<br>新增SNOTE<br>S8国行CSC调整<br>一些其他细节调整<br>感谢海盗大神的AOD息屏内核</p>
+<p>3.0更新：<br>更新最新G9550ZCU1AQE9<br>更新最新bixby<br>新增状态栏信号居左居右切换需要重启<br>新增通话结束延迟<br>新增通知提醒开关<br>新增快速充电开关<br>新增息屏指纹唤醒（默认关闭在增强设置关闭再开启重启生效）<br>新增锁屏恢复通知<br>更新日历修复节日假期订阅<br>修复s8相机印章功能<br>修复通话界面图标错位问题<br>更新增强设置<br>新增主页键自定义功能<br>新增退回键自定义功能<br>新增电源键自定义功能<br>新增下拉快捷方式开关<br>一些其他调整</p>
+<p>4.0更新：<br>修复上一版随机重启问题<br>修复S8相机部分功能<br>增强设置调整<br>修复虚拟按键锁屏无效问题<br>更新时间自定义代码<br>支持时间显示秒<br>新增丢失的主题免费功能<br>更新网速显示位置右边<br>修复自定义按键功能<br>新增HOME键双击启动相机菜单（S8相机和N5默认相机）<br>开机动画铃声更新S8<br>修复待机异常耗电<br>一些其他细节调整</p>
+<p>5.0更新：<br>N5最新官方7.0底包移植S8+<br>修复卡2无法4G问题<br>修复移动卡高清语音HD<br>修复GPS问题<br>修复通话界面错位问题<br>去除增强设置长按菜单键菜单选项<br>修复部分机型随机重启问题<br>去除了息屏指纹锁</p>
+<p>5.01更新：<br>修复发热耗电问题<br>修复部分机型重启问题<br>G9200 息屏提醒<br>可以刷升级补丁5.0升级到5.01</p>
+<p>6.0更新：<br>移植S8+最新G9550ZCU1AQEE<br>流畅度提升<br>省电发热控制<br>更新G9250内核修复会出现重启问题<br>更新G9200内核<br>修复增强设置按键结束应用程序显示英文问题<br>增强设置新增电池自定义<br>支持3M电池和官方电池切换<br>新增电池条显示（开机默认启动需要在增强设置电池自定义设置顶部电池条选择关闭即可）<br>新增运营商显示<br>新增下拉开关双卡选项<br>新增状态栏显示卡1卡2选项<br>新增状态栏信号方框图标开关选项（以上增强感谢man大）<br>破解第三方字体支持<br>息屏支持指纹快速解锁</p>
+<p>7.0更新：<br>更新最新G9550ZCU1AQF7<br>修复wifi热点无法开启的问题<br>修复锁屏状态下电池会显示不全问题<br>调整默认电池配置为官方<br>调整默认屏幕亮度控制<br>更新G9250/G9200/G9280内核<br>省电发热控制<br>一些其他调整<br>保持之前全部功能</p>
+<p>8.0更新：<br>aroma新增安装程序自选<br>新增锁屏农历显示<br>修复启动器默认高度<br>新增启动器增强设置<br>（网格支持5X5 5X6 6X6）<br>修复短信归属地显示<br>修复通话挂机延迟无效问题<br>修复音量下和关机键截图无效问题<br>新增游戏调节器<br>修复触摸误触问题<br>修复官方游戏配置王者稳定30帧<br>更新Magisk13</p>
+<p>9.0更新：<br>国行最新QG2底包<br>修复设置壁纸拉伸问题<br>修复S8相机动态照片fc问题<br>更新S8相机更多相机模式<br>aroma新增三重音效可选<br>aroma新增应用程序安装和删除<br>删除锁屏设置中无用的选项<br>修复锁屏农历设置<br>修正发热控制<br>一些其他调整</p>
+<p>11.0更新：<br>更新最新G9550ZCU1AQH6<br>新增程序双开功能（高级设置-双及时消息）<br>修复bixby视觉<br>修复S8相机小动物表情效果<br>增加spectrum内核控制器（4种模式切换内核性能）<br>主题功能直接永久使用无需切换（感谢时光）<br>Note系列更新Note8 SPEN<br>Note8应用移植动态信息等<br>三重音效移动到增强设置其他设置</p>
+<p>12.0更新：<br>修复上一版高清语音打电话问题<br>修复耳机声音问题<br>Spen恢复为默认7.0因为Note8有些问题<br>保留之前全部功能</p>
+<p>13.0更新：<br>更新移植最新G9500ZCU1AQJ4<br>更新Note8 spen<br>更新增强设置功能<br>更新最新S8天气和S8最新启动器<br>修复程序双开有时候无效问题<br>游戏启动器官方N5（不要更新游戏启动器）<br>更新韩版配置文件<br>更新官方和S8相机可选<br>修复移动网络切换问题<br>删除设置中的虹膜解锁<br>一些其他调整</p>
+<p>14.0更新：<br>更新最新G9550ZCU1AQJ8<br>更新最新三星程序<br>更新安全补丁10月1日<br>更新Note8 spen功能<br>保持之前全部增强功能<br>一些其他调整</p>
+<p>V15更新：<br>更新移植最新Experience 8.5<br>Note8 INFINITY动态壁纸<br>Note8部分程序移植<br>Note8最新程序<br>S8 8.0相机<br>S8 8.0曲面侧屏<br>增强设置新增锁屏密码无需OK键<br>增强设置新增状态栏闹钟蓝牙声音图标隐藏<br>修复三星屏幕投屏问题<br>一些其他配置调整</p>
+<p>V16更新：<br>更新最新G9550ZCU2AQK8移植<br>支持BIXBY更新语音功能（不支持息屏语音唤醒不知道是不是硬件问题）<br>修复上一版状态栏双卡信号显示问题<br>修复下拉双卡信号开关问题<br>修复上一版切换主题提示状态栏停止问题<br>修复设置打开卡顿问题<br>自定义按键功能重新调整（支持Bixby语音呼出）<br>三星商店需要手动更新（全部更新没有问题）<br>双卡信号调整<br>修复S6机型移动高清语音问题<br>Experience恢复8.1 因为会出现意想不到的错误（功能界面还跟上一版一样）<br>修复上一版动态壁纸设置部分无效问题<br>修复投屏电视问题<br>修复程序双开安装程序会出现两个和安装分身提醒修复<br>修复S8相机全景拍摄<br>一些其他更新调整</p>
+<p>V17更新：<br>修复第一次打开游戏可能出现黑屏问题（不要在三星商店更新游戏工具）<br>修复双卡网络切换<br>更新三星程序到最新<br>修复Spen翻译无法打开问题<br>新增奥利奥侧屏程序<br>新增奥利奥三星输入法<br>上一版直接刷入无需双清</p>
+<p>18.0更新：<br>更新N9200ZCU3DQK2最新官方底包<br>稳定顺滑<br>更新8.0一些特性<br>修复S8相机微信视频前置录像FC问题<br>更新新的相机驱动<br>更新8.0智能管理器<br>更新最新Note8 SPEN<br>应用程序打开速度已经应用运行更新流畅<br>修复S6机型重启之后会卡顿严重问题<br>修复一些其他问题<br>Bixby语音唤醒教程</p>
+<p>19.0更新：<br>更新N9200ZCU3DQL1最新官方底包<br>安全补丁更新到12月1日<br>修复SIM卡管理器移动网络显示错误问题<br>替换回官方默认智能管理器（bixby会无法识别之前的8.0管理器）<br>更新bixby等到官方最新版本<br>官方输入法升级更新<br>3M电池支持状态栏变色</p>
+<p>20.0更新：<br>更新最新G9550ZCU2AQL2移植<br>安全补丁更新20180101<br>修复上个版本归属地显示问题<br>更新归属地数据库到最新支持177号段<br>修复sim卡显示切换显示错误问题<br>修复上个版本全部问题</p>
+<p>V21更新：<br>增强设置调整<br>新增状态栏wifi和信号图标切换样式<br>新增高级重启菜单支持截图手电筒录像等<br>更新全部三星程序到最新（不要更新游戏启动器）<br>修复刷机脚本删除应用程序无效的问题<br>部分框架驱动调整<br>修复部分出现wifi信号断流问题<br>一些其他调整</p>
+<p>V22更新：<br>更新最新国行S8 G9550ZCU2ARB3<br>安全补丁更新到20180201<br>新增内置黑域补丁(第一次打开提示安装补丁重启手机即可）<br>三星程序全部更新到最新（除了游戏工具）<br>新增S9铃声和图标<br>保持之前全部功能<br>一些其他调整</p>
+<p>V23更新：<br>机型配置调整到官方模式王者帧数更稳<br>软件更新到最新<br>修复部分机油无法用息屏手写的<br>息屏手写功能需要开启笔记权限<br>增强设置部分功能整理</p>
+<p>关于Bixby无法更新的解决办法：<br>bixby提示需要进入设置系统更新的 自己更新官方最新的BL和基带如果不会直接线刷官方最新的ROM<br>如果闲麻烦刷完ROM后用RE文件管理器打开system/build.prop 把ro.product.model=SM-G9550改成SM-N9500然后保存重启即可<br>（重启开机之后就更新bixby其他的程序不要更新，因为你把版本号改成了N8所以三星商店会更新N8的其他应用导致FC所以只需要更新Bixby。更新Bixby以后可以用了再把机型版本号改回G9550然后三星商店的程序可以随便更新）</p>
+<p>关于Bixby语音唤醒解决办法：（感谢这位朋友的解决办法）<br><a href="https://pan.baidu.com/s/1skPgbJR" target="_blank" rel="noopener">https://pan.baidu.com/s/1skPgbJR</a></p>
+<p>感谢：<br>感谢戈蓝官方ROM<br>感谢grx mod增强<br>感谢海盗内核<br>感谢MAN大帮助<br>感谢累大帮助</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]</p>
+<p>MD5: BB1749474CAC9253B2881FFD557F4CFA<br>SHA1: 9BB4F70F2C552239613D897E23E302E027E6DFB6<br>CRC32: BCE1EA44</p>
+<p>ROM:<br>天翼云：<br><a href="https://cloud.189.cn/t/uQrMVja2YjYb" target="_blank" rel="noopener">https://cloud.189.cn/t/uQrMVja2YjYb</a></p>
+<p>云盘：<br><a href="https://pan.baidu.com/s/18sYxRqszyHg7V1uYrnUwdg" target="_blank" rel="noopener">https://pan.baidu.com/s/18sYxRqszyHg7V1uYrnUwdg</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>MOD补丁（google服务和字体包）<br><a href="http://pan.baidu.com/s/1i5naMR7" target="_blank" rel="noopener">http://pan.baidu.com/s/1i5naMR7</a></p>
+<p>[/hide]</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/note5国行/"><i class="fas fa-hashtag fa-fw"></i>note5国行</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/04/27/s7猎户座S8移植/">
+              
+                  s7猎户座S8移植
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-04-27
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>1.0完整移植国际版G955FXXU1AQCC<br>国行CSC配置<br>增加来去电话归属地<br>增加短信归属地显示<br>去除s8虚拟按键显示<br>默认S8相机<br>三星S8特效</p>
+<p>2.0更新：<br>修复网络连接问题<br>修复横屏下出现虚拟按键问题<br>修复相册无法看视频问题<br>修复游戏启动器<br>修复bixby侧滑出现错误问题<br>更新国行T9输入法<br>相机更换S7稳定官方相机<br>新增红包助手<br>下拉新增侧屏闪光开关（跑马灯）<br>新增三星自带音乐支持跑马灯<br>更新国行智能管理器<br>修复改善发热问题<br>修复一些其他问题日常使用没有问题</p>
+<p>3.0更新：<br>移植最新国际版S8+QDD底包<br>修复震动反馈问题<br>更新S8S助手<br>更新S8智能管理器<br>更新S8健康<br>更新最新S8相机<br>新增高级重启菜单<br>修复一些其他问题</p>
+<p>4.0更新：<br>移植最新G9550ZCU1AQDF国行S8+<br>支持国行版Google服务（需要自己下载play商店等服务）<br>自带国行三星云备份恢复<br>纯国行S8+相机<br>相机支持微信小视频<br>修复之前相机模式问题<br>修复上一版状态栏左右空的问题<br>使用MoRo 1.6.2内核<br>去除开机左上角红字<br>修复设置进入应用程序许可FC问题<br>修复韩版机型通话杂音问题<br>息屏提醒跑马灯直角<br>息屏提醒去除蓝字显示<br>新增简单的增强设置<br>时间位置调整<br>状态栏网速显示<br>状态栏虚拟按键<br>音量键切换歌曲<br>主题免费功能<br>修复之前卡顿发热问题<br>超顺滑稳定</p>
+<p>5.0更新：<br>修复G935K韩版刷不进去的问题<br>修复部分机器待机重启问题<br>修复异常发热耗电问题<br>修复wifi热点<br>修复屏幕亮度问题<br>修复音量下+电源键截图<br>修复游戏启动器<br>新增AROMA刷机模式<br>新增S7相机和S8相机可选<br>S7相机支持双击打开S8相机需要双击电源键<br>新增跑马灯圆角和直角可选<br>更新Magisk ROOT授权<br>修复自定义网速不会沉浸问题<br>更新Notorous1.4内核</p>
+<p>6.0更新：<br>调整通话记录归属地位置<br>新增私密模式<br>下拉重新排列<br>国行S8 csc调整<br>修复韩版呼叫等待问题<br>新增状态栏强制沉浸<br>修复增强高级设备信息<br>新增按键菜单键和最近任务杀进程选项<br>新增程序双开和dip切换自定义<br>bixby识别相册照片功能<br>调整S8相机小工具模式<br>添加一些丢失的lib<br>修复三星云备份应用和恢复问题<br>修复蓝牙链接<br>修复wifi热点开启其他设备无法连接问题<br>修复一些其他问题</p>
+<p>7.0更新：<br>更新最新G9550ZCU1AQE9<br>更新最新bixby<br>新增状态栏信号居左居右切换需要重启<br>新增通话结束延迟<br>新增通知提醒开关<br>新增快速充电开关<br>新增息屏指纹唤醒（默认关闭在增强设置关闭再开启重启生效）<br>新增锁屏恢复通知<br>更新日历修复节日假期订阅<br>保持之前全部功能<br>一些其他细节调整</p>
+<p>8.0更新：<br>更新蓝牙驱动<br>修复蓝牙双音频问题<br>更新部分信号驱动<br>修复部分机器重启问题<br>修复异常发热问题<br>更新NOTORIOUS内核1.5.5<br>修复s8相机印章功能<br>修复通话界面图标错位问题<br>修复韩版移动用户呼叫等待问题<br>修复接听来电按主屏幕<br>修复上一版私密模式问题<br>更新增强设置<br>新增主页键自定义功能<br>新增退回键自定义功能<br>新增电源键自定义功能<br>新增下拉快捷方式开关<br>一些其他调整</p>
+<p>9.0更新：<br>彻底修复部分机型重启问题<br>修复S8相机支持双击开启（增强设置主页键）<br>修复按键自定义出现选择错误问题<br>删除虹膜解锁面部解锁<br>状态栏时间网速代码更新<br>修复待机异常耗电<br>加回丢失的主题免费功能<br>移动网络切换模式增加<br>破解第三方字体支持<br>内核更新Notorious1.5.8<br>修复一些其他问题</p>
+<p>10.0更新：<br>更新S8+最新G9550ZCU1AQEE<br>流畅度全面提升<br>修复部分机型出现呼叫等待接听挂断问题<br>修复内核开启启动红包助手链接（所以建议大家不要换内核）<br>修复之前一些小问题<br>保留之前全部功能</p>
+<p>11.0更新：<br>新增电池样式切换3M电池和官方电池<br>新增电池条切换（首次开机会默认开启增强设置电池顶部电池条位置开关）<br>新增电池条颜色自定义<br>新增运营商显示开关自定义<br>新增下拉双卡和状态栏双卡标志开关<br>修复滚动截图问题<br>修复看视频发热问题<br>更新视频驱动<br>修复发热问题<br>修复框架内存卡读取问题<br>更新高清语音<br>修复一些其他问题</p>
+<p>12更新：<br>更新最新G9550ZCU1AQF7<br>更新Magisk v13.3<br>更新NOTORIOUS 1.8最新内核<br>新增游戏调节器<br>修复锁屏状态栏开启网速导致电池显示不全问题<br>增强设置新增锁屏农历<br>修复启动器屏幕底部高度<br>修复长按音量下和电源键截图问题<br>新增启动器自定义增强<br>修复私密模式开启无法关闭问题<br>修复S7官方性能配置<br>一些其他调整</p>
+<p>V13更新：<br>修复设置壁纸拉伸问题<br>修复S8相机动态照片fc问题<br>更新S8相机<br>aroma新增三重音效可选<br>aroma新增应用程序安装和删除<br>删除锁屏设置中无用的选项<br>修复锁屏农历设置<br>更新magisk 13.3<br>更新内核蝙蝠内核1.1.2<br>一些其他调整</p>
+<p>V14更新：</p>
+<p>更新最新G9550ZCU1AQH6<br>修复相机贴纸问题<br>修复动态相机效果<br>修复动态照片功能<br>更新拨号程序支持快速打开拨号面板<br>更新Note8天气显示街道信息<br>更新Note8输入法（支持动态信息）<br>更新Note8浏览器<br>增强设置现在wifi密码查看器<br>新增通话记录归属地颜色自定义<br>更新最新跑马灯支持自定义颜色等<br>更新Magisk 13.3</p>
+<p>V15更新：<br>修复韩版国际版高清语音<br>移植N7r双开程序功能（钛备份恢复会出现两个程序正常安装没问题）<br>新增内核控制省电模式游戏模式性能模式等<br>新增息屏唤醒按钮双击唤醒功能<br>去除重启菜单点击两次呼出菜单问题<br>更新magisk 最新版<br>隐藏音效管理器到增强设置其他设置<br>支持全部应用程序多窗口分屏<br>修复韩版机型通话可能出现杂音问题<br>修复韩版呼叫等待问题<br>新增通话记录短信归属地颜色大小调整<br>一些其他调整</p>
+<p>16.0更新：<br>修复提示权限是软件闪退问题<br>修复主题更新免费试用无效问题<br>增强设置新增一些实用功能（感谢小弟夏天增加功能）<br>修复桌面天气更新无效问题<br>修复韩版呼叫等待和通话杂音（呼叫等待请用S版基带）<br>优化流畅度和耗电<br>一些其他调整</p>
+<p>17更新：<br>更新最新G9500ZCU1AQJ4底包<br>修复程序双开有时会失效问题<br>完整国行S8相机<br>更新S8最新天气（跟N8一样）<br>更新S8最新启动器<br>更新Notorious 1.8.8内核<br>更新magisk 14.3<br>修复上个版本小错误<br>保持之前全部功能<br>稳定流畅优秀的发热控制</p>
+<p>18.0更新：<br>更新最新G9550ZCU1AQJ8<br>更新最新三星程序<br>更新安全补丁10月1日<br>保持之前全部增强功能<br>一些其他调整</p>
+<p>19.0更新：<br>更新移植最新Experience 8.5<br>Note8 INFINITY动态壁纸<br>Note8部分程序移植<br>Note8最新程序<br>S8 8.0相机<br>S8 8.0曲面侧屏<br>增强设置新增锁屏密码无需OK键<br>增强设置新增状态栏闹钟蓝牙声音图标隐藏<br>修复三星屏幕投屏问题<br>一些其他配置调整</p>
+<p>20.0更新：<br>更新最新G9550ZCU2AQK8移植<br>支持BIXBY更新语音功能（不支持息屏语音唤醒不知道是不是硬件问题）<br>修复上一版状态栏双卡信号显示问题<br>修复下拉双卡信号开关问题<br>修复上一版切换主题提示状态栏停止问题<br>修复设置打开卡顿问题<br>自定义按键功能重新调整（支持Bixby语音呼出）<br>三星商店需要手动更新（全部更新没有问题）<br>Experience恢复8.1 因为会出现意想不到的错误（功能界面还跟上一版一样）<br>修复上一版动态壁纸设置部分无效问题<br>修复程序双开安装程序会出现两个和安装分身提醒修复<br>一些其他更新调整</p>
+<p>21更新：<br>整合版20.0可以直接刷21.0不需要wipe<br>修复第一次打开游戏黑屏问题<br>修复游戏启动器（不要更新游戏启动器工具）<br>新增动态状态栏功能实时变色<br>修复启动器桌面显示问题<br>更新Magisk最新<br>修复上一般会出现卡顿问题<br>修复上一版的问题</p>
+<p>22.0更新：<br>更新全部最新三星程序<br>更新8.0国行输入法<br>3M电池支持变色显示<br>更新状态栏沉浸<br>Magisk更新到15.2<br>一些其他细节调整</p>
+<p>V23更新：<br>更新官方最新底包和驱动<br>更新移植最新G9550ZCU2AQL2<br>修复相机连拍慢的问题<br>修复下拉农历显示除夕的问题<br>magisk更新最新V15.3<br>增强设置调整<br>一些其他细节调整</p>
+<p>V24更新：<br>更新Moro 2.5内核开机没有红字<br>更新mgaisk 16.0最新<br>增强设置调整<br>新增状态栏wifi和信号图标切换样式<br>新增高级重启菜单支持截图手电筒录像等<br>更新全部三星程序到最新（不要更新游戏启动器）<br>修复刷机脚本删除应用程序无效的问题<br>修复上个版本韩版呼叫等待问题<br>相机模式调整<br>一些其他调整</p>
+<p>V25更新：<br>更新最新国行S8 G9550ZCU2ARB3<br>安全补丁更新到20180201<br>新增内置黑域补丁(第一次打开提示安装补丁重启手机即可）<br>三星程序全部更新到最新（除了游戏工具）<br>新增S9铃声和图标<br>保持之前全部功能<br>一些其他调整</p>
+<p>v26更新：<br>修复上一版卡顿问题<br>软件全部更新到最新<br>禁用了黑域框架（如果需要直接安装社区版）<br>magisk稳定版16.0</p>
+<p>感谢：<br>khongloi<br>superkernel<br>NOTORIOUS kernel感谢蝙蝠内核<br>感谢man帮助<br>感谢累累大神帮助</p>
+<p>刷机之前确定你已经刷过7.0官方ROM或者7.0基带</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ROM:</p>
+<p>MD5: 8A84D8F4FDDD9AF3C168EF0327016600<br>SHA1: 4A2D2A1777BE9386AA8427E418E1017C718EE2C6<br>CRC32: 283FFA5A</p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/A7nAzaRzuE7r" target="_blank" rel="noopener">https://cloud.189.cn/t/A7nAzaRzuE7r</a></p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/1MT8JZAgVyFUd_FQbsmSbGQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1MT8JZAgVyFUd_FQbsmSbGQ</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>MOD补丁（google服务和字体包卡刷bixby唤醒教程和黑域等）<br><a href="http://pan.baidu.com/s/1i5naMR7" target="_blank" rel="noopener">http://pan.baidu.com/s/1i5naMR7</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国际版/"><i class="fas fa-hashtag fa-fw"></i>S7国际版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+      
+
+  </section>
+
+
+
+
+
+
+  
+      <br>
+      <div class="prev-next">
+          <div class="prev-next">
+              
+              <p class="current">
+                  1 / 2
+              </p>
+              
+                  <a class="next" rel="next" href="/page/2/">
+                      <section class="post next">
+                          &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+                      </section>
+                  </a>
+              
+
+          </div>
+      </div>
+
+  
+
+  <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+  
+
+  
+
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>Use <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> as theme, total visits <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> times. 
+  </div>
+</footer>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/app.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

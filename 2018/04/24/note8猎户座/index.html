@@ -1,90 +1,490 @@
-{% extends "_layout.njk" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Note8s8s8+�ٷ����ư� | Norma ROM</title>
+  
+  
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/page.css") }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/post.css") }}">
-{% endblock %}
+  
+  <link rel="alternate" href="/atom.xml" title="Norma ROM">
+  
 
-{% block title %}{{ page.title }} | {{ config.title }}{% if config.subtitle %} - {{ config.subtitle }}{% endif %}{% endblock %}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
 
-{% block content %}
-<div id="post" class="page">
-  {% set post = page %}
-  <article class="article post card{% if theme.animate %} animate{% endif %}" itemscope itemtype="http://schema.org/Article">
-    <div class="post-block">
-      <link itemprop="mainEntityOfPage" href="{{ config.url }}{{ url_for(page.path) }}">
-      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-       <meta itemprop="name" content="{{ config.author }}">
-       <meta itemprop="description" content="{{ config.description }}">
-       <meta itemprop="image" content="{{ url_for(theme.avatar) }}">
-      </span>
-      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-       <meta itemprop="name" content="{{ config.title }}">
-      </span>
-    </div>
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-      <div class="post-meta">
-        {% if page.date %}
-        <span class="post-date">
-          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{{ date(post.date, config.date_format) }} {{ time(post.date, config.time_format) }}</time></span>
-        </span>
-        {% endif %}
-        {% if page.categories and page.categories.toArray().length %}
-        {% if page.date %}
-        <span class="post-meta-divider divider">|</span>
-        {% endif %}
-        <span class="post-categories">
-          {# About `-`: https://mozilla.github.io/nunjucks/cn/templating.html#part-861ece9d8e5ce60c #}
-          {% for cat in page.categories.toArray() -%}
-          {% if loop.first %}<i class="far fa-folder-open"></i>{% else %}<i class="fas fa-angle-right"></i>{% endif %}<span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="{{ url_for(cat.path) }}" itemprop="url" rel="index"><span itemprop="name">{{ cat.name }}</span></a></span>
-          {%- endfor %}
-        </span>
-        {% endif %}
-        {% if page.comment !== false and theme.comment.enable %}
-        {% if theme.comment.disqus_shortname %}
-        {% if page.categories or page.date %}
-        <span class="post-meta-divider divider">|</span>
-        {% endif %}
-        <span class="post-comment-count">
-          <i class="far fa-comments"></i><span><a href="{{ url_for(page.path) }}#disqus_thread" itemprop="discussionUrl"><span class="post-comment-count disqus-comment-count" data-disqus-identifier="{{ page.path }}" itemprop="commentCount"></span></a></span>
-        </span>
-        {% endif %}
-        {% endif %}
-      </div>
-    </header>
-    <main class="post-main" itemprop="articleBody">
-      {{ page.content }}
-    </main>
-    <footer class="post-footer">
-      {% if page.tags and page.tags.toArray().length %}
-      <div class="post-tags">
-        {% for tag in page.tags.toArray() %}
-        <a class="post-tag button" href="{{ url_for(tag.path) }}" rel="tag"><i class="fas fa-tags"></i>{{ tag.name }}</a>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </footer>
-  </article>
-  {% if theme.reward.enable %}
-  {% include "reward.njk" %}
-  {% endif %}
-  {% if page.prev or page.next %}
-  <nav class="page-nav">
-    <div class="page-nav-next page-nav-item">
-      {% if page.next %}
-      <a href="{{ url_for(page.next.path) }}" rel="next" title="{{ page.next.title }}"><i class="fas fa-angle-left"></i><span class="nav-title">{{ page.next.title }}</span></a>
-      {% endif %}
-    </div>
-    <div class="page-nav-prev page-nav-item">
-      {% if page.prev %}
-      <a href="{{ url_for(page.prev.path) }}" rel="prev" title="{{ page.prev.title }}"><span class="nav-title">{{ page.prev.title }}</span><i class="fas fa-angle-right"></i></a>
-      {% endif %}
-    </div>
-  </nav>
-  {% endif %}
-  {% if theme.comment.enable %}
-  {% include "comment.njk" %}
-  {% endif %}
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
-{% endblock %}
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Norma ROM
+        
+      </a>
+			<div class='menu'>
+				<ul class='h-list'>
+          
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+  
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">Note8s8s8+�ٷ����ư�</h1>
+      
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-04-24
+          </a>
+        </div>
+      
+      
+        
+      
+      
+        
+          <div class="new-meta-item browse busuanzi">
+            <a class='notlink'>
+              <i class="fas fa-eye" aria-hidden="true"></i>
+              <span id="busuanzi_value_page_pv">
+                <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ˢ���ؿ�</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM�ص�</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p>
+<p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p>
+<p>2.0���£�</p>
+<p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p>
+<p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p>
+<p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p>
+<p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p>
+<p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p>
+<p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p>
+<p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p>
+<p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p>
+<p>11.0���£�<br>��������N950FXXS3CRF6�װ�<br>��ǿ��������������ʾ����<br>���������������ƿ���λ��ѡ��<br>������������ֱ��ָ�ƹ���<br>״̬������ͼ������ʡ�������ͼ������<br>������ֲS9ȫ�ֶű�֧�֣���Ҫ�������<br>ɾ��S8S8+����SPenѡ��<br>����������������<br>��������S9����<br>����֮ǰȫ������</p>
+<p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>���ص�ַ</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]<br>ROM:</p>
+<p>MD5: F59D5D9D548D9031022E52E20AB0CA54<br>SHA1: B700952CD7E80B1FE7E3ED749E028B98B9FFD1D2<br>CRC32: 81D56E3A</p>
+<p>�������̣�<br><a href="https://cloud.189.cn/t/f2Ifqy2eUNRv" target="_blank" rel="noopener">https://cloud.189.cn/t/f2Ifqy2eUNRv</a></p>
+<p>���̣�<br><a href="https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA</a></p>
+<p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p>
+<p>[/hide]</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>��ͼ����</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+      </div>
+        
+          <section class='meta' id="footer-meta">
+            <hr>
+            <div class='new-meta-box'>
+              
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2018-07-19T15:00:36+08:00">
+                  <a class='notlink'>
+                    <i class="fas fa-save" aria-hidden="true"></i>
+                    2018-07-19
+                  </a>
+                </div>
+              
+              
+                
+                <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Note8���ʰ�/"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;Note8���ʰ�</a></div>
+              
+              
+            </div>
+          </section>
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                            <h4>
+                                <a href="/2018/04/25/s7国行/" rel="prev" title="G9350G9300 C7pro移植精简超顺滑省电 C3">
+                                  
+                                      G9350G9300 C7pro移植精简超顺滑省电 C3
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/S7国行版/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>S7国行版</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2018/04/24/S8猎户通刷8.0国行移植/" rel="prev" title="S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性">
+                                    
+                                        S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/国际版S8/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>国际版S8</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+
+
+
+<script>
+    window.subData = {
+        title: 'Note8s8s8+�ٷ����ư�',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>Use <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> as theme, total visits <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> times. 
+  </div>
+</footer>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/app.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
+</html>

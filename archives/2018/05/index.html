@@ -1,53 +1,789 @@
-{% extends "_layout.njk" %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Archives: 2018/5 | Norma ROM</title>
+  
+  
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/page.css") }}">
-<link rel="stylesheet" type="text/css" href="{{ url_for("css/post.css") }}">
-{% endblock %}
+  
+  <link rel="alternate" href="/atom.xml" title="Norma ROM">
+  
 
-{% block title %}{{ __("archive") }} | {{ config.title }}{% if config.subtitle %} - {{ config.subtitle }}{% endif %}{% endblock %}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
 
-{% block content %}
-<div id="archive" class="archive page">
-  <h1 class="page-title">{{ __("archive") }}</h1>
-  <h2 class="page-counter">
-    {% if site.posts.length > 1 %}
-    {{ _p("postcount.more", site.posts.length) }}
-    {% elif site.posts.length === 1 %}
-    {{ _p("postcount.one", site.posts.length) }}
-    {% else %}
-    {{ __("postcount.none") }}
-    {% endif %}
-  </h2>
-  {% set year = "1970" %}
-  {% for post in page.posts.toArray() %}
-  {% if date(post.date, "YYYY") !== year %}
-  {% set year = date(post.date, "YYYY") %}
-  <h2 class="page-title">{{ year }}</h1>
-  {% endif %}
-  <article class="article post card{% if theme.animate %} animate{% endif %}" itemscope itemtype="http://schema.org/Article">
-    <header id="post-header" class="post-header">
-      <h1 class="post-title-simple" itemprop="name headline">
-        <a class="post-title-link post-title-link-external" href="{{ url_for(post.path) }}" itemprop="url">{{ post.title }}</a>
-      </h1>
-      {% if post.date %}
-      <span class="post-date">
-        <time title="post-date" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{{ date(post.date, "MM-DD") }}</time>
-      </span>
-      {% endif %}
-    </header>
-  </article>
-  {% endfor %}
-  {% if page.prev or page.next %}
-  <nav class="pagination">
-    {{
-      paginator({
-        prev_text: "<i class=\"fas fa-angle-left\" aria-label=\"" + __("accessibility.prev_page") + "\"></i>",
-        next_text: "<i class=\"fas fa-angle-right\" aria-label=\"" + __("accessibility.next_page") + "\"></i>",
-        mid_size: 1
-      })
-    }}
-  </nav>
-  {% endif %}
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+
+  
+  
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
-{% endblock %}
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          Norma ROM
+        
+      </a>
+			<div class='menu'>
+				<ul class='h-list'>
+          
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+	
+    <script>
+        window.subData= { title:'year : 2018.5'}
+    </script>
+
+
+
+
+  <section class="post-list">
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+
+
+      
+
+      
+
+      
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/15/国际版S8移植S9/">
+              
+                  国际版S8移植S9
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-15
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    SM-G95XF/FD/N N950F/FDN  8895通刷<br>发布时间    2018年05月15日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>V1：<br>基于越南infinity-oreo底包内核（在此感谢）<br>移植国行G9600ZCU1ARBH<br>S8官方相机功能<br>纯官方S9<br>增强设置自定义添加<br>更多S9功能自己体验</p>
+<p>s9移植V2更新：<br>基于官方最新N950FXXU3CRC1底包<br>移植S9+国行最新G9650ZCU1ARC2<br>修复上一版耳机问题<br>修复Spen翻译 完整的N8 SPEN功能<br>增加增强设置<br>通话记录显示归属地<br>时间位置<br>按键自定义调整等等<br>一些其他调整自己体验</p>
+<p>S9v3更新：<br>新增高级重启菜单支持<br>修复联通卡移动网络切换2G后无法切换其他网络问题<br>网络信号配置调整<br>游戏配置修改为官方<br>机型版本号修改为s8官方<br>bixby视觉更新可以正常使用<br>修复wifi热点打开重启问题<br>自动亮度灵敏度调整<br>更快的面部识别和虹膜解锁<br>更新内核NK内核解决部分机型twrp无法识别内部储存问题<br>修复发热和耗电快问题<br>一些其他调整</p>
+<p>S9V4更新：<br>移植最新S9+ G9650ZCU2ARC6<br>安全补丁更新到最新<br>新增下拉农历<br>增强设置自定义按键代码更新<br>支持bixby按键自定义<br>修复息屏提醒时间显示会消失问题<br>SSRM机型配置调整<br>修复手写输入无效问题<br>更新magisk 16.3<br>新增S9相机贴纸<br>一些其他修改调整</p>
+<p>V5更新：<br>修复强光下亮度问题<br>修复缓解耗电发热问题<br>修复SD卡储存可能出现的问题<br>增强设置更新新功能<br>导航栏调整到0然后开启图标下沉开关即可隐藏导航栏<br>移植S9bixby视觉（新功能）<br>更换magisk为supersu pro版<br>S9信息支持归属地显示<br>修复fd双卡信号问题<br>王者支持VT模式<br>机型版本号修改为G9650<br>S8S8+内核更新NX R8<br>一些其他调整</p>
+<p>V6更新:<br>新增aroma刷机脚本机型选项<br>移植国际版S9<br>支持S9杜比音效<br>S9相机AR表情效果<br>移植S9相机（Note8放大2x功能远距离正常近距离会太大）<br>新增通话挂机延迟设置<br>游戏性能优化<br>流畅吃鸡王者稳定高帧<br>更新内核NK219（可以自己换喜欢的内核）</p>
+<p>V7更新：<br>magisk更换supersu（magisk会导致部分机器无法开机）<br>修复Note8相机问题<br>S8S8+无需刷相机补丁<br>修复自动亮度强光下黑屏问题<br>修复设置辅助功能服务开启fc问题<br>修复全局杜比音效<br>修复异常发热问题<br>跑马灯边框调整机型对应<br>S8S8+相机驱动更新<br>修复部分第三方字体无法安装问题<br>一些其他修改和调整</p>
+<p>V8更新：<br>换回S9国行底包<br>更新S9国行杜比音效驱动<br>修复虹膜面部解锁慢的问题<br>删除google服务框架（会导致耗电需要的可以自己单刷框架）<br>机型框架调整官方版本配置<br>修复内存储存分区读取问题包含otg和外置sd卡<br>省电优化调整<br>王者稳定60帧吃鸡流畅（刺激战场和全军出击）<br>增强设置新增虚拟按键横屏关闭和开启菜单（当虚拟按键高度调整到0时也希望横屏完全隐藏）<br>S8FD版本通话杂音修复<br>信号居左更新修复之前可能会显示两个信号问题<br>一些其他调整和修复</p>
+<p>错误：<br>锁屏设置里的<br>智能扫描（硬件不支持不能同时面部和虹膜一起）</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>[hide]<br>ROM:<br>MD5: D32519542551CE0772A9883C913FA510<br>SHA1: E0B34C2AEAED4698AE7E2C1104BA1E258F361DB8<br>CRC32: 6D3B7E78</p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/3IZvYvAZzyIb" target="_blank" rel="noopener">https://cloud.189.cn/t/3IZvYvAZzyIb</a></p>
+<p>云盘：</p>
+<p><a href="https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ</a></p>
+<p>内置应用程序希望大家帮忙联网使用两天后再删除，感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/国际版S8/"><i class="fas fa-hashtag fa-fw"></i>国际版S8</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/10/s8国行8ROM/">
+              
+                  s8国行8ROM
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-10
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    g9500 g9550 国行港版<br>发布时间    2018年05月10日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>1.0:<br>G9550 8.0 RD1官方底包定制<br>添加magisk 16.3 root授权（脸谱）<br>busybox支持<br>增加增强设置<br>通话记录短信归属地显示<br>S9壁纸移植<br>S9动态相机效果<br>破解系统签名显示<br>破解主题支持永久试用<br>破解第三方字体支持<br>开启更多相机功能<br>所有三星商店程序更新到最新<br>禁用knox<br>最新官方内核源代码编译宽松内核限制</p>
+<p>2.0更新：<br>更新G9550ZCU2CRD8最新<br>安全补丁更新到4月<br>mgaisk root更新16.4<br>增强设置新增一些实用功能<br>虚拟按键调节到0完全隐藏（开启启动器下沉开关图标下沉）<br>更新S9短信归属地显示<br>添加S9铃声等<br>一些其他调整</p>
+<p>刷机教程：<br><a href="https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w" target="_blank" rel="noopener">https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w</a></p>
+<p>感谢：<br>感谢累大的内核帮助支持<br>感谢U大的内核解决办法<br>感谢man大自定义</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>MD5: 0A329172DD4AA5B3DF610833EE087614<br>SHA1: DBC276058D0A6DBCA820482EF72DE8C1E086645D<br>CRC32: 1F5D636E</p>
+<p>ROM:</p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/IVJRjqjyq2Mb" target="_blank" rel="noopener">https://cloud.189.cn/t/IVJRjqjyq2Mb</a></p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g" target="_blank" rel="noopener">https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g</a></p>
+<p>内置软件希望大家联网使用两天感谢大家的支持</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>截图赏析</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/国行版S8/"><i class="fas fa-hashtag fa-fw"></i>国行版S8</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/02/S7猎户座8-0/">
+              
+                  S7S7edge猎户座8.0
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-02
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    单卡8890猎户座通刷支持FD版本<br>发布时间    2018年05月16日</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>O1：<br>官方泄漏版G935FXXU2ERB4<br>去除内核加密显示（放心刷入不会导致内存分区无法读取）<br>magisk 16.0 root授权<br>通话记录归属地显示<br>短信显示归属地<br>国行网络定位<br>国行csc配置<br>国行智能管理器<br>支持应用程序锁<br>国行日历假期显示<br>下拉支持录制屏幕<br>更多国行特性</p>
+<p>o2更新：<br>G935FXXU2ERD5官方稳定版8.0<br>支持S7直屏和S7edge曲屏猎户座机型<br>去除加密分区限制<br>增加supersu root授权<br>增加busybox支持<br>增加增强设置<br>国行日历订阅<br>国行智能管理器应用锁等<br>移植S9动态infinity壁纸<br>S9铃声<br>S9相机贴纸<br>添加更多相机功能<br>破解主题永久试用<br>破解第三方字体支持<br>通话短信归属地显示<br>国行csc配置<br>一些其他调整</p>
+<p>o3更新：<br>更新增强设置新功能<br>按键修复无法双击唤醒相机问题<br>修复联通卡网络切换问题<br>新增S8bixby语音（不支持锁屏唤醒）<br>bixby支持增强设置按键唤醒<br>王者支持VT模式<br>移植S9短信程序<br>修复上一版打开相册提示错误问题</p>
+<p>o4更新：<br>更新官方最新G935FXXU2ERE8<br>修复应用程序许可无法开启问题<br>修复高级重启菜单屏幕录像和线刷模式无效问题<br>修复状态栏隐藏图标无效问题<br>修复S9短信贴纸<br>修复私密模式无法开启问题下拉新增开关<br>新编译内核内核权限permissive<br>支持S9相机<br>一些其他调整更新</p>
+<p>O5更新：<br>更新最新官方G935FXXU2EREM<br>修复bixby呼出可能造成状态栏停止的fc<br>修复高级重启菜单无效问题<br>保持之前全部功能</p>
+<p>O6更新：<br>修复应用锁无法打开问题<br>修复私密模式无法开启问题<br>修复bixby喊关闭出现状态栏崩溃问题<br>更新最近时间自定义代码支持显示日期等<br>更新信号左右代码修复之前可能会出现同时显示两个问题<br>更新3M电池新的样式支持沉浸变色<br>一些其他增强自定义调整更新</p>
+<p>O7更新：<br>新增锁屏天气显示<br>修复状态栏隐藏图标蓝牙、声音、闹钟、省电图标等<br>新增下拉流量显示控制开关<br>新增重启指纹解锁功能<br>修复状态栏网速不显示箭头问题<br>修复s9壁纸部分无法选择问题<br>更新最新S9官方短信<br>优化RAM预存占用问题<br>一些其他修改和调整<br>O6可以直接刷无需清空</p>
+<p>注意：三星商店不要更新游戏中心否则不会显示游戏工具</p>
+<p>O系列属于纯官方修改定制<br>V系列是S9移植</p>
+<p>7.0底包直接刷入即可</p>
+<p>感谢：<br>magisk<br>累累大神帮助<br>感谢man大神帮助</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>本帖隐藏的内容</p>
+<p>MD5: BEC197E417933CD548C2926FA1356E12<br>SHA1: 04DBE503105188843401E8A4279F6DD9BFF04F28<br>CRC32: 00143269</p>
+<p>ROM:</p>
+<p>百度云：<br><a href="https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA" target="_blank" rel="noopener">https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA</a></p>
+<p>天翼云盘：<br><a href="https://cloud.189.cn/t/NF77RrvyiYra" target="_blank" rel="noopener">https://cloud.189.cn/t/NF77RrvyiYra</a></p>
+<p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p>
+<p>第三方字体补丁包卡刷：<br><a href="https://cloud.189.cn/t/YVzE3qbIzy6f" target="_blank" rel="noopener">https://cloud.189.cn/t/YVzE3qbIzy6f</a></p>
+<p>S9相机卡刷包：<br><a href="https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw</a></p>
+<p>google服务补丁：（需要到设置应用程序找到google服务权限全部开启否则会提示fc）<br><a href="https://cloud.189.cn/t/2EJ77rI7Vnuq" target="_blank" rel="noopener">https://cloud.189.cn/t/2EJ77rI7Vnuq</a></p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/S7国际版/"><i class="fas fa-hashtag fa-fw"></i>S7国际版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class='post-wrapper'>
+              <article class="post reveal ">
+    
+<section class='meta'>
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/2018/05/01/N8国行官方8-0定制/">
+              
+                  N8国行官方8.0定制
+              
+          </a>
+      </h2>
+    
+
+    <div class='new-meta-box'>
+      
+        <div class='new-meta-item author'>
+          <a href="http://yoursite.com">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Norma ROM
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class='notlink'>
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            2018-05-01
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <blockquote>
+<blockquote>
+<blockquote>
+<p>刷机必看</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ROM特点</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>1.0：<br>基于官方N9500ZCU2CRD5底包制作<br>添加magisk root授权<br>添加busybox支持<br>精简系统自带的程序<br>添加增强设置<br>通话记录短信归属地显示<br>主题永久免费试用<br>破解第三方字体支持<br>官方RD5内核源编译宽松的内核权限<br>开启更多相机功能<br>S9相机贴纸<br>一些其他自定义调整</p>
+<p>2.0更新：<br>新增移植S9动态壁纸<br>移植S9短信<br>修复上一版归属地显示问题<br>增强设置更新新功能<br>支持导航栏调整到0图标下沉<br>一些其他调整</p>
+<p>3.0更新：<br>更新最新RF2最新底包<br>更新累大内核更换supersu<br>安全补丁更新到6月1号<br>增强设置新增功能</p>
+<p>感谢累累大神帮助<br>感谢U大的帮助</p>
+<p>刷机教程：<br><a href="https://cloud.189.cn/t/zUbAj2e6nUvy" target="_blank" rel="noopener">https://cloud.189.cn/t/zUbAj2e6nUvy</a></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>下载地址</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>ROM:<br>MD5: 049A608075B4DA48093532759B4B7161<br>SHA1: 5B16576A85572E2AB9714FFA3CDA21B8DD1FFD80<br>CRC32: A83B9D1E</p>
+<p>天翼云盘：</p>
+<p><a href="https://cloud.189.cn/t/F7f2IvNvYNVj" target="_blank" rel="noopener">https://cloud.189.cn/t/F7f2IvNvYNVj</a></p>
+<p>云盘：</p>
+<p><a href="https://pan.baidu.com/s/1xvA-tNsC2F8AnzYgwURt0Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1xvA-tNsC2F8AnzYgwURt0Q</a></p>
+<p>S9动态壁纸ROM默认N8官方壁纸（需要S9动态壁纸的可以直接刷完ROM直接刷这个补丁）<br><a href="https://pan.baidu.com/s/1NGeNmEWPzigNEWmyS0i2Yw" target="_blank" rel="noopener">https://pan.baidu.com/s/1NGeNmEWPzigNEWmyS0i2Yw</a></p>
+<p>内置应用希望大家联网支持使用几天。谢谢</p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/tags/Note8国行版/"><i class="fas fa-hashtag fa-fw"></i>Note8国行版</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+      
+
+  </section>
+
+
+
+
+
+
+  
+
+  <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+  
+
+  
+
+
+
+
+
+<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+  
+  <br>
+  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+</div>
+  <div>Use <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> as theme, total visits <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> times. 
+  </div>
+</footer>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="/js/app.js"></script>
+<script src="/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
