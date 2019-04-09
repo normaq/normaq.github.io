@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-09T01:49:46.875Z</updated>
+  <updated>2019-04-09T02:53:38.536Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[ROM][9.0]一加3、3T安卓P SmartBoost 信号居左自定义增强稳定版9.0</title>
+    <link href="http://yoursite.com/2019/04/09/ROM-9-0-%E4%B8%80%E5%8A%A03%E3%80%813T%E5%AE%89%E5%8D%93P-SmartBoost-%E4%BF%A1%E5%8F%B7%E5%B1%85%E5%B7%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A2%9E%E5%BC%BA%E7%A8%B3%E5%AE%9A%E7%89%889-0/"/>
+    <id>http://yoursite.com/2019/04/09/ROM-9-0-一加3、3T安卓P-SmartBoost-信号居左自定义增强稳定版9-0/</id>
+    <published>2019-04-09T01:56:45.000Z</published>
+    <updated>2019-04-09T02:53:38.536Z</updated>
+    
+    <content type="html"><![CDATA[<p>rom版本：9.0</p><p>适用机型：一加3.3t</p><p>小加一加3.3TROM<br>QQ群号：<br>846083034</p><p>ROM特点：<br>一加3 3t稳定版9.0公测定制<br>添加busybox支持<br>添加magisk 19.0稳定版完整root<br>自定义设置MDO<br>增加状态栏电池调整:<br>官方样式和3M电池样式切换<br>3M电池样式支持上百种电池在线下载切换<br>3M电池支持电池大小调节（3M电池设置）<br>网速显示：<br>支持网速单行双行切换显示<br>网速箭头显示<br>箭头位置<br>自动隐藏低流量值<br>网速流量字体切换字体大小颜色等<br>状态栏运营商：<br>支持状态栏运营商显示开关<br>自动变色自定义运营商文字<br>运营商颜色<br>运营商文本大小（需要重启生效）<br>下拉信息设置：<br>下拉农历显示<br>下拉农历年份显示<br>农历颜色<br>锁屏界面设置：<br>锁屏运营商信息显示开关<br>自定义运营商名称<br>运营商文字自定义大小等<br>锁屏时间底部显示农历<br>农历颜色自定义<br>快速指纹：<br>重启之后无需输入密码等直接可以指纹解锁<br>新增状态栏切换功能（切换信号居左和居右）<br>状态栏日期时间新增官方默认时间开关和自定义日期开关（喜欢哪个用哪个）<br>下拉新增下拉按钮动画风格动画效果等设置<br>下拉新增下拉按钮字体修改<br>新增下拉背景透明度调节<br>新增快速下拉开关<br>新增智能下拉开关<br>新增二次下拉行数和列数调整<br>修复锁屏运营商位置显示问题（如果信号切换居左会和锁屏运营商重叠需要关闭锁屏运营商功能即可）<br>锁屏新增小部件功能<br>小部件可选任何软件的小插件在锁屏上任意位置显示（比如天气、音乐等都可以）<br>锁屏新增锁屏界面隐藏状态栏功能<br>新增锁屏时间右侧显示（这个功能针对一加6带流海的机器）<br>新增一加5T一加6导航栏动画效果支持18种动画随意切换</p><p>问答：</p><p>首次开机为什么会有两个时间显示？</p><p>答：因为我做了一个可以显示官方时间和我自定义时间的两个开关，解决方法打开小加MOD即可。</p><p>锁屏小部件怎么使用？</p><p>答：锁屏小部件可以将任何应用带的插件比如天气桌面的插件和音乐自带的插件让他们能在锁屏界面显示<br>垂直高度（在锁屏上从状态栏到屏幕最下面的位置可以任意调节）<br>垂直尺寸（小插件尺寸都不一样大可以调节他）<br>水平尺寸（小插件显示左右宽度可以随意调节他）</p><p>信号居左，左侧会显示图标？状态栏切换开关<br>（一加6不会有这个问题因为流海屏幕原因）<br>答：因为9.0的信号居左非常麻烦我的方法是把信号原来位置的图标全部都移动到左侧显示（你可以进入设置-显示-状态栏-图标管理关闭一些图标显示即可比如NFC）</p><p>状态栏通知提醒有什么用？</p><p>答：通知提醒是当来消息通知的时候会在状态栏左侧弹出应用消息，如果你用自定义时钟弹出的消息会和时间重叠关闭这个选项可以解决这个问题</p><p>锁屏状态栏时间居右？</p><p>答：因为一加6带流海时间居中不会显示，如果一加6用户开启了信号居左就需要开启锁屏状态栏时间居右功能，一加5.5T可以不需要开启这个只需要开启自定义时间居中即可</p><p>注意：<br>刷机之前请备份好手机重要文件到你的电脑上<br>禁止其他人提取使用本ROM的自定义增强功能<br>内置应用程序希望大家联网使用几天再删除<br>ROM内置第三方应用可以用RE文件管理器system/periv-app/2018开头删除<br>禁止任何人二次修改本人的ROM发布到论坛</p><p>刷机方法：(需要解密如果你的机器加密的官方底包刷完ROM需要格式化data才能开机）<br>解锁之后刷twrp然后四清刷机即可</p><p>ROM下载：</p><p>[hide]</p><p>下载地址：<br>天翼：<br><a href="https://cloud.189.cn/t/IZJZZrf6Bb2q" target="_blank" rel="noopener">https://cloud.189.cn/t/IZJZZrf6Bb2q</a></p><p>云盘：<br>链接：<a href="https://pan.baidu.com/s/1IIX1s-mOhK4OdjBz8i1vDQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1IIX1s-mOhK4OdjBz8i1vDQ</a><br>提取码：xt69 </p><p>迈凯伦动态壁纸卡刷包（刷好后到设置-应用和通知-默认应用-桌面应用选择一加桌面才生效）：<br>链接：<a href="https://pan.baidu.com/s/1ay2gx-qs5Hqg-0xdUREi9A" target="_blank" rel="noopener">https://pan.baidu.com/s/1ay2gx-qs5Hqg-0xdUREi9A</a><br>提取码：jmkq </p><p>截图：</p><p><img src="http://i1.bvimg.com/631320/665ed05e7254824e.png"><img src="http://i1.bvimg.com/631320/4c1e66ed92061fed.png"><img src="http://i1.bvimg.com/631320/3cdaf1d19cb6b74a.png"><img src="http://i1.bvimg.com/631320/74df85e7b4312792.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;rom版本：9.0&lt;/p&gt;
+&lt;p&gt;适用机型：一加3.3t&lt;/p&gt;
+&lt;p&gt;小加一加3.3TROM&lt;br&gt;QQ群号：&lt;br&gt;846083034&lt;/p&gt;
+&lt;p&gt;ROM特点：&lt;br&gt;一加3 3t稳定版9.0公测定制&lt;br&gt;添加busybox支持&lt;br&gt;添加magisk 19.0稳定
+      
+    
+    </summary>
+    
+    
+      <category term="oneplus3" scheme="http://yoursite.com/tags/oneplus3/"/>
+    
+  </entry>
   
   <entry>
     <title>[ROM][9.0]一加5、5T安卓P SmartBoost悬浮球信号居左自定义增强稳定版9.0.2</title>
@@ -502,31 +528,6 @@
     
     
       <category term="tags" scheme="http://yoursite.com/tags/tags/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【ROM】【7.0】N5国行韩版S6通刷S8+移植N8星空壁纸息屏Bixby23.0</title>
-    <link href="http://yoursite.com/2018/04/28/note5%E5%9B%BD%E8%A1%8CS8%E7%A7%BB%E6%A4%8D/"/>
-    <id>http://yoursite.com/2018/04/28/note5国行S8移植/</id>
-    <published>2018-04-28T09:58:15.000Z</published>
-    <updated>2018-04-28T10:00:29.086Z</updated>
-    
-    <content type="html"><![CDATA[<p>ROM版本    android 7.0<br>ROM作者    Norma<br>机型    N9200 G9280  G9200/8/9 G9250 N920SLK<br>发布时间    2018年04月28日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>直接进入twrp卡刷即可<br>国行N9200 G9280<br>移植国行S8+ G9550ZCU1AQDF<br>完整国行S8+移植<br>感谢索马里海盗内核支持<br>通话记录归属地<br>短信显示归属地<br>增加一些简单的增强设置<br>S8跑马灯支持<br>S8+相机（双击电源键启动）<br>增加7.0 spen功能<br>其他功能自己测试</p><p>2.0更新：<br>修复上一版部分机器刷入卡第二屏问题<br>更新root授权<br>修复NFC功能<br>新增AOD息屏提醒支持自动亮度<br>修复SPEN翻译问题<br>新增SPen智能备忘录<br>修复息屏快写功能<br>新增N5相机和S8相机可选<br>(N5相机支持双击home键打开相机S8需要双击电源键)<br>新增SNOTE<br>S8国行CSC调整<br>一些其他细节调整<br>感谢海盗大神的AOD息屏内核</p><p>3.0更新：<br>更新最新G9550ZCU1AQE9<br>更新最新bixby<br>新增状态栏信号居左居右切换需要重启<br>新增通话结束延迟<br>新增通知提醒开关<br>新增快速充电开关<br>新增息屏指纹唤醒（默认关闭在增强设置关闭再开启重启生效）<br>新增锁屏恢复通知<br>更新日历修复节日假期订阅<br>修复s8相机印章功能<br>修复通话界面图标错位问题<br>更新增强设置<br>新增主页键自定义功能<br>新增退回键自定义功能<br>新增电源键自定义功能<br>新增下拉快捷方式开关<br>一些其他调整</p><p>4.0更新：<br>修复上一版随机重启问题<br>修复S8相机部分功能<br>增强设置调整<br>修复虚拟按键锁屏无效问题<br>更新时间自定义代码<br>支持时间显示秒<br>新增丢失的主题免费功能<br>更新网速显示位置右边<br>修复自定义按键功能<br>新增HOME键双击启动相机菜单（S8相机和N5默认相机）<br>开机动画铃声更新S8<br>修复待机异常耗电<br>一些其他细节调整</p><p>5.0更新：<br>N5最新官方7.0底包移植S8+<br>修复卡2无法4G问题<br>修复移动卡高清语音HD<br>修复GPS问题<br>修复通话界面错位问题<br>去除增强设置长按菜单键菜单选项<br>修复部分机型随机重启问题<br>去除了息屏指纹锁</p><p>5.01更新：<br>修复发热耗电问题<br>修复部分机型重启问题<br>G9200 息屏提醒<br>可以刷升级补丁5.0升级到5.01</p><p>6.0更新：<br>移植S8+最新G9550ZCU1AQEE<br>流畅度提升<br>省电发热控制<br>更新G9250内核修复会出现重启问题<br>更新G9200内核<br>修复增强设置按键结束应用程序显示英文问题<br>增强设置新增电池自定义<br>支持3M电池和官方电池切换<br>新增电池条显示（开机默认启动需要在增强设置电池自定义设置顶部电池条选择关闭即可）<br>新增运营商显示<br>新增下拉开关双卡选项<br>新增状态栏显示卡1卡2选项<br>新增状态栏信号方框图标开关选项（以上增强感谢man大）<br>破解第三方字体支持<br>息屏支持指纹快速解锁</p><p>7.0更新：<br>更新最新G9550ZCU1AQF7<br>修复wifi热点无法开启的问题<br>修复锁屏状态下电池会显示不全问题<br>调整默认电池配置为官方<br>调整默认屏幕亮度控制<br>更新G9250/G9200/G9280内核<br>省电发热控制<br>一些其他调整<br>保持之前全部功能</p><p>8.0更新：<br>aroma新增安装程序自选<br>新增锁屏农历显示<br>修复启动器默认高度<br>新增启动器增强设置<br>（网格支持5X5 5X6 6X6）<br>修复短信归属地显示<br>修复通话挂机延迟无效问题<br>修复音量下和关机键截图无效问题<br>新增游戏调节器<br>修复触摸误触问题<br>修复官方游戏配置王者稳定30帧<br>更新Magisk13</p><p>9.0更新：<br>国行最新QG2底包<br>修复设置壁纸拉伸问题<br>修复S8相机动态照片fc问题<br>更新S8相机更多相机模式<br>aroma新增三重音效可选<br>aroma新增应用程序安装和删除<br>删除锁屏设置中无用的选项<br>修复锁屏农历设置<br>修正发热控制<br>一些其他调整</p><p>11.0更新：<br>更新最新G9550ZCU1AQH6<br>新增程序双开功能（高级设置-双及时消息）<br>修复bixby视觉<br>修复S8相机小动物表情效果<br>增加spectrum内核控制器（4种模式切换内核性能）<br>主题功能直接永久使用无需切换（感谢时光）<br>Note系列更新Note8 SPEN<br>Note8应用移植动态信息等<br>三重音效移动到增强设置其他设置</p><p>12.0更新：<br>修复上一版高清语音打电话问题<br>修复耳机声音问题<br>Spen恢复为默认7.0因为Note8有些问题<br>保留之前全部功能</p><p>13.0更新：<br>更新移植最新G9500ZCU1AQJ4<br>更新Note8 spen<br>更新增强设置功能<br>更新最新S8天气和S8最新启动器<br>修复程序双开有时候无效问题<br>游戏启动器官方N5（不要更新游戏启动器）<br>更新韩版配置文件<br>更新官方和S8相机可选<br>修复移动网络切换问题<br>删除设置中的虹膜解锁<br>一些其他调整</p><p>14.0更新：<br>更新最新G9550ZCU1AQJ8<br>更新最新三星程序<br>更新安全补丁10月1日<br>更新Note8 spen功能<br>保持之前全部增强功能<br>一些其他调整</p><p>V15更新：<br>更新移植最新Experience 8.5<br>Note8 INFINITY动态壁纸<br>Note8部分程序移植<br>Note8最新程序<br>S8 8.0相机<br>S8 8.0曲面侧屏<br>增强设置新增锁屏密码无需OK键<br>增强设置新增状态栏闹钟蓝牙声音图标隐藏<br>修复三星屏幕投屏问题<br>一些其他配置调整</p><p>V16更新：<br>更新最新G9550ZCU2AQK8移植<br>支持BIXBY更新语音功能（不支持息屏语音唤醒不知道是不是硬件问题）<br>修复上一版状态栏双卡信号显示问题<br>修复下拉双卡信号开关问题<br>修复上一版切换主题提示状态栏停止问题<br>修复设置打开卡顿问题<br>自定义按键功能重新调整（支持Bixby语音呼出）<br>三星商店需要手动更新（全部更新没有问题）<br>双卡信号调整<br>修复S6机型移动高清语音问题<br>Experience恢复8.1 因为会出现意想不到的错误（功能界面还跟上一版一样）<br>修复上一版动态壁纸设置部分无效问题<br>修复投屏电视问题<br>修复程序双开安装程序会出现两个和安装分身提醒修复<br>修复S8相机全景拍摄<br>一些其他更新调整</p><p>V17更新：<br>修复第一次打开游戏可能出现黑屏问题（不要在三星商店更新游戏工具）<br>修复双卡网络切换<br>更新三星程序到最新<br>修复Spen翻译无法打开问题<br>新增奥利奥侧屏程序<br>新增奥利奥三星输入法<br>上一版直接刷入无需双清</p><p>18.0更新：<br>更新N9200ZCU3DQK2最新官方底包<br>稳定顺滑<br>更新8.0一些特性<br>修复S8相机微信视频前置录像FC问题<br>更新新的相机驱动<br>更新8.0智能管理器<br>更新最新Note8 SPEN<br>应用程序打开速度已经应用运行更新流畅<br>修复S6机型重启之后会卡顿严重问题<br>修复一些其他问题<br>Bixby语音唤醒教程</p><p>19.0更新：<br>更新N9200ZCU3DQL1最新官方底包<br>安全补丁更新到12月1日<br>修复SIM卡管理器移动网络显示错误问题<br>替换回官方默认智能管理器（bixby会无法识别之前的8.0管理器）<br>更新bixby等到官方最新版本<br>官方输入法升级更新<br>3M电池支持状态栏变色</p><p>20.0更新：<br>更新最新G9550ZCU2AQL2移植<br>安全补丁更新20180101<br>修复上个版本归属地显示问题<br>更新归属地数据库到最新支持177号段<br>修复sim卡显示切换显示错误问题<br>修复上个版本全部问题</p><p>V21更新：<br>增强设置调整<br>新增状态栏wifi和信号图标切换样式<br>新增高级重启菜单支持截图手电筒录像等<br>更新全部三星程序到最新（不要更新游戏启动器）<br>修复刷机脚本删除应用程序无效的问题<br>部分框架驱动调整<br>修复部分出现wifi信号断流问题<br>一些其他调整</p><p>V22更新：<br>更新最新国行S8 G9550ZCU2ARB3<br>安全补丁更新到20180201<br>新增内置黑域补丁(第一次打开提示安装补丁重启手机即可）<br>三星程序全部更新到最新（除了游戏工具）<br>新增S9铃声和图标<br>保持之前全部功能<br>一些其他调整</p><p>V23更新：<br>机型配置调整到官方模式王者帧数更稳<br>软件更新到最新<br>修复部分机油无法用息屏手写的<br>息屏手写功能需要开启笔记权限<br>增强设置部分功能整理</p><p>关于Bixby无法更新的解决办法：<br>bixby提示需要进入设置系统更新的 自己更新官方最新的BL和基带如果不会直接线刷官方最新的ROM<br>如果闲麻烦刷完ROM后用RE文件管理器打开system/build.prop 把ro.product.model=SM-G9550改成SM-N9500然后保存重启即可<br>（重启开机之后就更新bixby其他的程序不要更新，因为你把版本号改成了N8所以三星商店会更新N8的其他应用导致FC所以只需要更新Bixby。更新Bixby以后可以用了再把机型版本号改回G9550然后三星商店的程序可以随便更新）</p><p>关于Bixby语音唤醒解决办法：（感谢这位朋友的解决办法）<br><a href="https://pan.baidu.com/s/1skPgbJR" target="_blank" rel="noopener">https://pan.baidu.com/s/1skPgbJR</a></p><p>感谢：<br>感谢戈蓝官方ROM<br>感谢grx mod增强<br>感谢海盗内核<br>感谢MAN大帮助<br>感谢累大帮助</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]</p><p>MD5: BB1749474CAC9253B2881FFD557F4CFA<br>SHA1: 9BB4F70F2C552239613D897E23E302E027E6DFB6<br>CRC32: BCE1EA44</p><p>ROM:<br>天翼云：<br><a href="https://cloud.189.cn/t/uQrMVja2YjYb" target="_blank" rel="noopener">https://cloud.189.cn/t/uQrMVja2YjYb</a></p><p>云盘：<br><a href="https://pan.baidu.com/s/18sYxRqszyHg7V1uYrnUwdg" target="_blank" rel="noopener">https://pan.baidu.com/s/18sYxRqszyHg7V1uYrnUwdg</a></p><p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p><p>MOD补丁（google服务和字体包）<br><a href="http://pan.baidu.com/s/1i5naMR7" target="_blank" rel="noopener">http://pan.baidu.com/s/1i5naMR7</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ROM版本    android 7.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    N9200 G9280  G9200/8/9 G9250 N920SLK&lt;br&gt;发布时间    2018年04月28日&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="note5国行" scheme="http://yoursite.com/tags/note5%E5%9B%BD%E8%A1%8C/"/>
     
   </entry>
   

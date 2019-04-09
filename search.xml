@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>[ROM][9.0]一加3、3T安卓P SmartBoost 信号居左自定义增强稳定版9.0</title>
+      <link href="/2019/04/09/ROM-9-0-%E4%B8%80%E5%8A%A03%E3%80%813T%E5%AE%89%E5%8D%93P-SmartBoost-%E4%BF%A1%E5%8F%B7%E5%B1%85%E5%B7%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A2%9E%E5%BC%BA%E7%A8%B3%E5%AE%9A%E7%89%889-0/"/>
+      <url>/2019/04/09/ROM-9-0-%E4%B8%80%E5%8A%A03%E3%80%813T%E5%AE%89%E5%8D%93P-SmartBoost-%E4%BF%A1%E5%8F%B7%E5%B1%85%E5%B7%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A2%9E%E5%BC%BA%E7%A8%B3%E5%AE%9A%E7%89%889-0/</url>
+      
+        <content type="html"><![CDATA[<p>rom版本：9.0</p><p>适用机型：一加3.3t</p><p>小加一加3.3TROM<br>QQ群号：<br>846083034</p><p>ROM特点：<br>一加3 3t稳定版9.0公测定制<br>添加busybox支持<br>添加magisk 19.0稳定版完整root<br>自定义设置MDO<br>增加状态栏电池调整:<br>官方样式和3M电池样式切换<br>3M电池样式支持上百种电池在线下载切换<br>3M电池支持电池大小调节（3M电池设置）<br>网速显示：<br>支持网速单行双行切换显示<br>网速箭头显示<br>箭头位置<br>自动隐藏低流量值<br>网速流量字体切换字体大小颜色等<br>状态栏运营商：<br>支持状态栏运营商显示开关<br>自动变色自定义运营商文字<br>运营商颜色<br>运营商文本大小（需要重启生效）<br>下拉信息设置：<br>下拉农历显示<br>下拉农历年份显示<br>农历颜色<br>锁屏界面设置：<br>锁屏运营商信息显示开关<br>自定义运营商名称<br>运营商文字自定义大小等<br>锁屏时间底部显示农历<br>农历颜色自定义<br>快速指纹：<br>重启之后无需输入密码等直接可以指纹解锁<br>新增状态栏切换功能（切换信号居左和居右）<br>状态栏日期时间新增官方默认时间开关和自定义日期开关（喜欢哪个用哪个）<br>下拉新增下拉按钮动画风格动画效果等设置<br>下拉新增下拉按钮字体修改<br>新增下拉背景透明度调节<br>新增快速下拉开关<br>新增智能下拉开关<br>新增二次下拉行数和列数调整<br>修复锁屏运营商位置显示问题（如果信号切换居左会和锁屏运营商重叠需要关闭锁屏运营商功能即可）<br>锁屏新增小部件功能<br>小部件可选任何软件的小插件在锁屏上任意位置显示（比如天气、音乐等都可以）<br>锁屏新增锁屏界面隐藏状态栏功能<br>新增锁屏时间右侧显示（这个功能针对一加6带流海的机器）<br>新增一加5T一加6导航栏动画效果支持18种动画随意切换</p><p>问答：</p><p>首次开机为什么会有两个时间显示？</p><p>答：因为我做了一个可以显示官方时间和我自定义时间的两个开关，解决方法打开小加MOD即可。</p><p>锁屏小部件怎么使用？</p><p>答：锁屏小部件可以将任何应用带的插件比如天气桌面的插件和音乐自带的插件让他们能在锁屏界面显示<br>垂直高度（在锁屏上从状态栏到屏幕最下面的位置可以任意调节）<br>垂直尺寸（小插件尺寸都不一样大可以调节他）<br>水平尺寸（小插件显示左右宽度可以随意调节他）</p><p>信号居左，左侧会显示图标？状态栏切换开关<br>（一加6不会有这个问题因为流海屏幕原因）<br>答：因为9.0的信号居左非常麻烦我的方法是把信号原来位置的图标全部都移动到左侧显示（你可以进入设置-显示-状态栏-图标管理关闭一些图标显示即可比如NFC）</p><p>状态栏通知提醒有什么用？</p><p>答：通知提醒是当来消息通知的时候会在状态栏左侧弹出应用消息，如果你用自定义时钟弹出的消息会和时间重叠关闭这个选项可以解决这个问题</p><p>锁屏状态栏时间居右？</p><p>答：因为一加6带流海时间居中不会显示，如果一加6用户开启了信号居左就需要开启锁屏状态栏时间居右功能，一加5.5T可以不需要开启这个只需要开启自定义时间居中即可</p><p>注意：<br>刷机之前请备份好手机重要文件到你的电脑上<br>禁止其他人提取使用本ROM的自定义增强功能<br>内置应用程序希望大家联网使用几天再删除<br>ROM内置第三方应用可以用RE文件管理器system/periv-app/2018开头删除<br>禁止任何人二次修改本人的ROM发布到论坛</p><p>刷机方法：(需要解密如果你的机器加密的官方底包刷完ROM需要格式化data才能开机）<br>解锁之后刷twrp然后四清刷机即可</p><p>ROM下载：</p><p>[hide]</p><p>下载地址：<br>天翼：<br><a href="https://cloud.189.cn/t/IZJZZrf6Bb2q" target="_blank" rel="noopener">https://cloud.189.cn/t/IZJZZrf6Bb2q</a></p><p>云盘：<br>链接：<a href="https://pan.baidu.com/s/1IIX1s-mOhK4OdjBz8i1vDQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1IIX1s-mOhK4OdjBz8i1vDQ</a><br>提取码：xt69 </p><p>迈凯伦动态壁纸卡刷包（刷好后到设置-应用和通知-默认应用-桌面应用选择一加桌面才生效）：<br>链接：<a href="https://pan.baidu.com/s/1ay2gx-qs5Hqg-0xdUREi9A" target="_blank" rel="noopener">https://pan.baidu.com/s/1ay2gx-qs5Hqg-0xdUREi9A</a><br>提取码：jmkq </p><p>截图：</p><p><img src="http://i1.bvimg.com/631320/665ed05e7254824e.png"><img src="http://i1.bvimg.com/631320/4c1e66ed92061fed.png"><img src="http://i1.bvimg.com/631320/3cdaf1d19cb6b74a.png"><img src="http://i1.bvimg.com/631320/74df85e7b4312792.png"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> oneplus3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>[ROM][9.0]一加5、5T安卓P SmartBoost悬浮球信号居左自定义增强稳定版9.0.2</title>
       <link href="/2019/04/09/ROM-9-0-%E4%B8%80%E5%8A%A05%E3%80%815T%E5%AE%89%E5%8D%93P-SmartBoost%E6%82%AC%E6%B5%AE%E7%90%83%E4%BF%A1%E5%8F%B7%E5%B1%85%E5%B7%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A2%9E%E5%BC%BA%E7%A8%B3%E5%AE%9A%E7%89%889-0-2/"/>
       <url>/2019/04/09/ROM-9-0-%E4%B8%80%E5%8A%A05%E3%80%815T%E5%AE%89%E5%8D%93P-SmartBoost%E6%82%AC%E6%B5%AE%E7%90%83%E4%BF%A1%E5%8F%B7%E5%B1%85%E5%B7%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%A2%9E%E5%BC%BA%E7%A8%B3%E5%AE%9A%E7%89%889-0-2/</url>
@@ -467,25 +486,6 @@
     
     
     <entry>
-      <title>Note8s8s8+�ٷ����ư�</title>
-      <link href="/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
-      <url>/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/</url>
-      
-        <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>11.0���£�<br>��������N950FXXS3CRF6�װ�<br>��ǿ��������������ʾ����<br>���������������ƿ���λ��ѡ��<br>������������ֱ��ָ�ƹ���<br>״̬������ͼ������ʡ�������ͼ������<br>������ֲS9ȫ�ֶű�֧�֣���Ҫ�������<br>ɾ��S8S8+����SPenѡ��<br>����������������<br>��������S9����<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: F59D5D9D548D9031022E52E20AB0CA54<br>SHA1: B700952CD7E80B1FE7E3ED749E028B98B9FFD1D2<br>CRC32: 81D56E3A</p><p>�������̣�<br><a href="https://cloud.189.cn/t/f2Ifqy2eUNRv" target="_blank" rel="noopener">https://cloud.189.cn/t/f2Ifqy2eUNRv</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Note8���ʰ� </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>S8S8+猎户通刷8.0增强超顺滑国行RD4移植S9特性</title>
       <link href="/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/"/>
       <url>/2018/04/24/S8%E7%8C%8E%E6%88%B7%E9%80%9A%E5%88%B78.0%E5%9B%BD%E8%A1%8C%E7%A7%BB%E6%A4%8D/</url>
@@ -497,6 +497,25 @@
         <tags>
             
             <tag> s8rom </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Note8s8s8+�ٷ����ư�</title>
+      <link href="/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/"/>
+      <url>/2018/04/24/note8%E7%8C%8E%E6%88%B7%E5%BA%A7/</url>
+      
+        <content type="html"><![CDATA[<p>ROM�汾    android 8.0<br>ROM����    Norma<br>����    SM-G95XF/FD/N N950F/FDN  8895ͨˢ<br>����ʱ��    2018��05��06��</p><blockquote><blockquote><blockquote><p>ˢ���ؿ�</p></blockquote></blockquote></blockquote><p>��������:<br>1.���˷���������ROM�����ڸ��˼�������,���ս���Ȩ������Ȩ����ROMԭ������.<br>2.���˲��е�����ˢ��ʧ����ɵ�һ����<br>3.ROM�����ƹ������system/app/��ͷ1/2/3/4/5�ļ���ϣ����Ҵ�����֧��ʹ�����죬��ϲ����RE�ļ�����������system/appɾ�������.<br>4.����ROMǰһ����׼���˵İٶ�����lijianjun4144<br>5.��ӭ��ע��������΢�����������Լ�����ROM��Ѷ<br>�����ע</p><blockquote><blockquote><blockquote><p>ROM�ص�</p></blockquote></blockquote></blockquote><p>Galaxy Note8: SM-N950F/DS, SM-N950N<br>Galaxy S8 Plus: SM-G955F/FD, SM-G955N<br>Galaxy S8: SM-G950F/FD, SM-G950N<br>1.0��</p><p>�ٷ�N950FXXU3CRC1����<br>���supersu root��Ȩ<br>������������<br>����csc����<br>����Ӧ�ó�����<br>�������綨λ<br>�����Լ�����</p><p>2.0���£�</p><p>������ǿ����<br>���Ӹ߼�����˵�<br>��������ũ����ʾ<br>��ȥ�绰�������ʾ<br>���»��Ͱ汾��Ϊ���а汾<br>�޸�bixby���ֹ���Ӧ���޷���������<br>���Ӹ����������<br>������������S9����<br>�޸���ͨ���ƶ������л�����<br>�޸�֮ǰһЩС����<br>����NX�ں�<br>һЩ��������</p><p>3.0���£�<br>��������N950FXXU3CRC3�ٷ��װ�<br>magisk����supersu pro��<br>�޸����һЩ����<br>����S9�����ֽЧ��<br>��ǿ���ð����Զ������֧��Bixby�Զ���<br>�޸�S8�����������ʾ��ȫ����<br>ʡ������������<br>һЩ������������</p><p>4.0���£�<br>����RC3�ٷ��װ���ֲ����N8 N9500ZCU2CRD5<br>��ȫ�������µ�4��1��<br>����֮ǰ�Ĺ���<br>�޸�һЩ֮ǰ������</p><p>5.0���£�<br>�������¹ٷ�N950FXXS3CRD2<br>��ȫ��������4��<br>������ǿ����<br>����S9��ֽ��ֲ<br>�ٷ��ȶ�ʡ�粻����</p><p>7.0���£�<br>�������º���N950NKSU3CRD6<br>�޸�״̬�����ⰴ������<br>�޸�����Ӧ�ó�������Լ����ܹ�����Ӧ��Ȩ���޷�������<br>��ֲS9���źͶ�����ֽ<br>��ǿ��������ͨ�������ӳٿ���<br>���������������µ���<br>�Լ���������<br>����֧��vt��֡<br>supersu����pro����֮ǰ�������Ȩ��������</p><p>8.0���£�<br>��������N950FXXU3CRE5�װ�<br>��ȫ�������µ�5��1��<br>�޸�˫��FD��������<br>�޸�ɧ������UI��ʾ����<br>�޸�״̬������������<br>�޸�����Ӧ�����Ȩ�޴򲻿�����<br>aroma����˫������ѡ��<br>supersu����magiskroot����������<br>����Ҫviper��Чֱ�ӿ�����magiskģ�����������ذ�װ��<br>����֮ǰȫ������</p><p>9.0���£�<br>����N8���¹ٷ�N950FXXS3CRF1<br>״̬��ʱ�������Զ����С����ʽ<br>�޸�3M��ذ�ɫ�޷���������<br>����S9��̬��ֽ��N8��ֽ�ٷ���ѡ<br>����֮ǰȫ������</p><p>10.0���£�<br>��������N950FXXU3CRF4<br>��ȫ�������µ�6��1��<br>S8S8+�ں˸��µ�NK220�ں�<br>N8�ں˸���220<br>�޸�Note8���������������<br>����֮ǰȫ������</p><p>11.0���£�<br>��������N950FXXS3CRF6�װ�<br>��ǿ��������������ʾ����<br>���������������ƿ���λ��ѡ��<br>������������ֱ��ָ�ƹ���<br>״̬������ͼ������ʡ�������ͼ������<br>������ֲS9ȫ�ֶű�֧�֣���Ҫ�������<br>ɾ��S8S8+����SPenѡ��<br>����������������<br>��������S9����<br>����֮ǰȫ������</p><p>�����ⷴ��<br>xposed��ܲ��Ǻ��ȶ�������ˢ��</p><blockquote><blockquote><blockquote><p>���ص�ַ</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:</p><p>MD5: F59D5D9D548D9031022E52E20AB0CA54<br>SHA1: B700952CD7E80B1FE7E3ED749E028B98B9FFD1D2<br>CRC32: 81D56E3A</p><p>�������̣�<br><a href="https://cloud.189.cn/t/f2Ifqy2eUNRv" target="_blank" rel="noopener">https://cloud.189.cn/t/f2Ifqy2eUNRv</a></p><p>���̣�<br><a href="https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA" target="_blank" rel="noopener">https://pan.baidu.com/s/1Ipe3tOyRXQDdcv5zLdCBTA</a></p><p>google���񲹶���<br><a href="https://cloud.189.cn/t/JbqYZbVzuQny" target="_blank" rel="noopener">https://cloud.189.cn/t/JbqYZbVzuQny</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>��ͼ����</p></blockquote></blockquote></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Note8���ʰ� </tag>
             
         </tags>
       
