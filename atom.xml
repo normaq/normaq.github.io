@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-04T02:08:38.578Z</updated>
+  <updated>2019-05-04T02:38:38.838Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,50 +17,23 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2019/05/04/test-1/"/>
-    <id>http://yoursite.com/2019/05/04/test-1/</id>
-    <published>2019-05-04T02:08:38.000Z</published>
-    <updated>2019-05-04T02:08:38.578Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2019/05/04/test/"/>
-    <id>http://yoursite.com/2019/05/04/test/</id>
-    <published>2019-05-04T02:05:19.000Z</published>
-    <updated>2019-05-04T02:05:19.935Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>三星root 微信指纹支付教程</title>
     <link href="http://yoursite.com/2019/05/04/%E4%B8%89%E6%98%9Froot-%E5%BE%AE%E4%BF%A1%E6%8C%87%E7%BA%B9%E6%94%AF%E4%BB%98%E6%95%99%E7%A8%8B/"/>
     <id>http://yoursite.com/2019/05/04/三星root-微信指纹支付教程/</id>
     <published>2019-05-04T01:18:10.000Z</published>
-    <updated>2019-05-04T02:31:52.441Z</updated>
+    <updated>2019-05-04T02:38:38.838Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>微信指纹支付方法</strong></p><p>下载我网盘里的全部文件放到你手机内存里</p><p>打开Magisk Manager脸谱标志的图标</p><p>部分机型比如S10它会提示你安装额外的环境点击安装即可，其他机型直接打开magisk安装模块（wifi如果安装很慢换4G网络）</p><p>安装成功会提示重启，不要动等待重启完成</p><p>开机支持再次点击Magisk Manager脸谱标志的图标，点击左上角菜单-模块-屏幕下方的黄色加号</p><p>点击右上角三个小点的按钮-显示内部储存空间</p><p>然后点击左侧三个横杠按钮-Galaxy S10 或者S10+或者其他机型</p><p>点击magisk-框架-v18.zip</p><p>再次添加magisk-微信指纹.zip</p><p>然后点击重启就可以了（重启过程中不要动让他自己重启完成）</p><p>开机之后安装我网盘里的微信7.0（必须这个版本才支持这个指纹，其他版本不支持）</p><p>设置好指纹之后</p><p>微信登录好后，不要更新微信，选择跳过这个版本进入微信</p><p>微信里就会出现指纹菜单就可以了</p><p>支付宝方法也是这样设置</p><p><img src="https://upload-images.jianshu.io/upload_images/5577461-5cf0b35c40b77ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown"><br><img src="https://upload-images.jianshu.io/upload_images/5577461-46b8628423af1554.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown"></p><p>下载：</p><p>链接：<a href="https://pan.baidu.com/s/1-fRc5F0RfTIJJu0ak28AGw" target="_blank" rel="noopener">https://pan.baidu.com/s/1-fRc5F0RfTIJJu0ak28AGw</a></p><p>提取码：x7fm</p>]]></content>
+    <content type="html"><![CDATA[<font color="red" size="5"><strong>微信指纹支付方法</strong></font><p>下载我网盘里的全部文件放到你手机内存里</p><p>打开Magisk Manager脸谱标志的图标</p><p>部分机型比如S10它会提示你安装额外的环境点击安装即可，其他机型直接打开magisk安装模块（wifi如果安装很慢换4G网络）</p><p>安装成功会提示重启，不要动等待重启完成</p><p>开机支持再次点击Magisk Manager脸谱标志的图标，点击左上角菜单-模块-屏幕下方的黄色加号</p><p>点击右上角三个小点的按钮-显示内部储存空间</p><p>然后点击左侧三个横杠按钮-Galaxy S10 或者S10+或者其他机型</p><p>点击magisk-框架-v18.zip</p><p>再次添加magisk-微信指纹.zip</p><p>然后点击重启就可以了（重启过程中不要动让他自己重启完成）</p><p>开机之后安装我网盘里的微信7.0（必须这个版本才支持这个指纹，其他版本不支持）</p><p>设置好指纹之后</p><p>微信登录好后，不要更新微信，选择跳过这个版本进入微信</p><p>微信里就会出现指纹菜单就可以了</p><p>支付宝方法也是这样设置</p><p><img src="https://upload-images.jianshu.io/upload_images/5577461-5cf0b35c40b77ab1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown"><br><img src="https://upload-images.jianshu.io/upload_images/5577461-46b8628423af1554.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown"></p><font color="#0099ff" size="5" face="STCAIYUN">下载</font><p>链接：<a href="https://pan.baidu.com/s/1-fRc5F0RfTIJJu0ak28AGw" target="_blank" rel="noopener">https://pan.baidu.com/s/1-fRc5F0RfTIJJu0ak28AGw</a></p><p>提取码：x7fm</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;微信指纹支付方法&lt;/strong&gt;&lt;/p&gt;
+        &lt;font color=&quot;red&quot; size=&quot;5&quot;&gt;&lt;strong&gt;微信指纹支付方法&lt;/strong&gt;&lt;/font&gt;
+
 &lt;p&gt;下载我网盘里的全部文件放到你手机内存里&lt;/p&gt;
 &lt;p&gt;打开Magisk Manager脸谱标志的图标&lt;/p&gt;
-&lt;p&gt;部分机型比如S10它会提示你安装额外的环境点击安装即可，其他机型直接打开magisk安装模块
+&lt;p&gt;部分机型比如S10它会提示你安装额外
       
     
     </summary>
@@ -496,6 +469,60 @@
     
     
       <category term="国际版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E9%99%85%E7%89%88S8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>s8国行8ROM</title>
+    <link href="http://yoursite.com/2018/05/10/s8%E5%9B%BD%E8%A1%8C8ROM/"/>
+    <id>http://yoursite.com/2018/05/10/s8国行8ROM/</id>
+    <published>2018-05-10T12:45:28.000Z</published>
+    <updated>2018-05-10T12:46:26.136Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    g9500 g9550 国行港版<br>发布时间    2018年05月10日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>1.0:<br>G9550 8.0 RD1官方底包定制<br>添加magisk 16.3 root授权（脸谱）<br>busybox支持<br>增加增强设置<br>通话记录短信归属地显示<br>S9壁纸移植<br>S9动态相机效果<br>破解系统签名显示<br>破解主题支持永久试用<br>破解第三方字体支持<br>开启更多相机功能<br>所有三星商店程序更新到最新<br>禁用knox<br>最新官方内核源代码编译宽松内核限制</p><p>2.0更新：<br>更新G9550ZCU2CRD8最新<br>安全补丁更新到4月<br>mgaisk root更新16.4<br>增强设置新增一些实用功能<br>虚拟按键调节到0完全隐藏（开启启动器下沉开关图标下沉）<br>更新S9短信归属地显示<br>添加S9铃声等<br>一些其他调整</p><p>刷机教程：<br><a href="https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w" target="_blank" rel="noopener">https://pan.baidu.com/s/1ianHf76Ys0X-FkiWlpW1_w</a></p><p>感谢：<br>感谢累大的内核帮助支持<br>感谢U大的内核解决办法<br>感谢man大自定义</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>MD5: 0A329172DD4AA5B3DF610833EE087614<br>SHA1: DBC276058D0A6DBCA820482EF72DE8C1E086645D<br>CRC32: 1F5D636E</p><p>ROM:</p><p>天翼云盘：<br><a href="https://cloud.189.cn/t/IVJRjqjyq2Mb" target="_blank" rel="noopener">https://cloud.189.cn/t/IVJRjqjyq2Mb</a></p><p>百度云：<br><a href="https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g" target="_blank" rel="noopener">https://pan.baidu.com/s/1wj8-B3v54FmBm588YEFS7g</a></p><p>内置软件希望大家联网使用两天感谢大家的支持</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 8.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    g9500 g9550 国行港版&lt;br&gt;发布时间    2018年05月10日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;刷机必
+      
+    
+    </summary>
+    
+    
+      <category term="国行版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E8%A1%8C%E7%89%88S8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>S7S7edge猎户座8.0</title>
+    <link href="http://yoursite.com/2018/05/02/S7%E7%8C%8E%E6%88%B7%E5%BA%A78-0/"/>
+    <id>http://yoursite.com/2018/05/02/S7猎户座8-0/</id>
+    <published>2018-05-02T11:53:15.000Z</published>
+    <updated>2018-07-14T08:31:40.427Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    单卡8890猎户座通刷支持FD版本<br>发布时间    2018年05月16日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>O1：<br>官方泄漏版G935FXXU2ERB4<br>去除内核加密显示（放心刷入不会导致内存分区无法读取）<br>magisk 16.0 root授权<br>通话记录归属地显示<br>短信显示归属地<br>国行网络定位<br>国行csc配置<br>国行智能管理器<br>支持应用程序锁<br>国行日历假期显示<br>下拉支持录制屏幕<br>更多国行特性</p><p>o2更新：<br>G935FXXU2ERD5官方稳定版8.0<br>支持S7直屏和S7edge曲屏猎户座机型<br>去除加密分区限制<br>增加supersu root授权<br>增加busybox支持<br>增加增强设置<br>国行日历订阅<br>国行智能管理器应用锁等<br>移植S9动态infinity壁纸<br>S9铃声<br>S9相机贴纸<br>添加更多相机功能<br>破解主题永久试用<br>破解第三方字体支持<br>通话短信归属地显示<br>国行csc配置<br>一些其他调整</p><p>o3更新：<br>更新增强设置新功能<br>按键修复无法双击唤醒相机问题<br>修复联通卡网络切换问题<br>新增S8bixby语音（不支持锁屏唤醒）<br>bixby支持增强设置按键唤醒<br>王者支持VT模式<br>移植S9短信程序<br>修复上一版打开相册提示错误问题</p><p>o4更新：<br>更新官方最新G935FXXU2ERE8<br>修复应用程序许可无法开启问题<br>修复高级重启菜单屏幕录像和线刷模式无效问题<br>修复状态栏隐藏图标无效问题<br>修复S9短信贴纸<br>修复私密模式无法开启问题下拉新增开关<br>新编译内核内核权限permissive<br>支持S9相机<br>一些其他调整更新</p><p>O5更新：<br>更新最新官方G935FXXU2EREM<br>修复bixby呼出可能造成状态栏停止的fc<br>修复高级重启菜单无效问题<br>保持之前全部功能</p><p>O6更新：<br>修复应用锁无法打开问题<br>修复私密模式无法开启问题<br>修复bixby喊关闭出现状态栏崩溃问题<br>更新最近时间自定义代码支持显示日期等<br>更新信号左右代码修复之前可能会出现同时显示两个问题<br>更新3M电池新的样式支持沉浸变色<br>一些其他增强自定义调整更新</p><p>O7更新：<br>新增锁屏天气显示<br>修复状态栏隐藏图标蓝牙、声音、闹钟、省电图标等<br>新增下拉流量显示控制开关<br>新增重启指纹解锁功能<br>修复状态栏网速不显示箭头问题<br>修复s9壁纸部分无法选择问题<br>更新最新S9官方短信<br>优化RAM预存占用问题<br>一些其他修改和调整<br>O6可以直接刷无需清空</p><p>注意：三星商店不要更新游戏中心否则不会显示游戏工具</p><p>O系列属于纯官方修改定制<br>V系列是S9移植</p><p>7.0底包直接刷入即可</p><p>感谢：<br>magisk<br>累累大神帮助<br>感谢man大神帮助</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>本帖隐藏的内容</p><p>MD5: BEC197E417933CD548C2926FA1356E12<br>SHA1: 04DBE503105188843401E8A4279F6DD9BFF04F28<br>CRC32: 00143269</p><p>ROM:</p><p>百度云：<br><a href="https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA" target="_blank" rel="noopener">https://pan.baidu.com/s/1qRmw0H_aQy_fCLUeSlq2JA</a></p><p>天翼云盘：<br><a href="https://cloud.189.cn/t/NF77RrvyiYra" target="_blank" rel="noopener">https://cloud.189.cn/t/NF77RrvyiYra</a></p><p>希望大家把内置软件都打开联网使用两天再删除感谢大家的支持</p><p>第三方字体补丁包卡刷：<br><a href="https://cloud.189.cn/t/YVzE3qbIzy6f" target="_blank" rel="noopener">https://cloud.189.cn/t/YVzE3qbIzy6f</a></p><p>S9相机卡刷包：<br><a href="https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw" target="_blank" rel="noopener">https://pan.baidu.com/s/1zEn6exB7o8VN1wiot6VQqw</a></p><p>google服务补丁：（需要到设置应用程序找到google服务权限全部开启否则会提示fc）<br><a href="https://cloud.189.cn/t/2EJ77rI7Vnuq" target="_blank" rel="noopener">https://cloud.189.cn/t/2EJ77rI7Vnuq</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 8.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    单卡8890猎户座通刷支持FD版本&lt;br&gt;发布时间    2018年05月16日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;刷机
+      
+    
+    </summary>
+    
+    
+      <category term="S7国际版" scheme="http://yoursite.com/tags/S7%E5%9B%BD%E9%99%85%E7%89%88/"/>
     
   </entry>
   
