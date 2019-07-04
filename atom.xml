@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-01T06:28:17.481Z</updated>
+  <updated>2019-07-04T08:53:40.711Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[ROM][9.0]S10S10+猎户座通刷国行特性SE7 增强设置稳定Norma v3</title>
+    <link href="http://yoursite.com/2019/07/04/ROM-9-0-S10S10-%E7%8C%8E%E6%88%B7%E5%BA%A7%E9%80%9A%E5%88%B7%E5%9B%BD%E8%A1%8C%E7%89%B9%E6%80%A7SE7-%E5%A2%9E%E5%BC%BA%E8%AE%BE%E7%BD%AE%E7%A8%B3%E5%AE%9ANorma-v3/"/>
+    <id>http://yoursite.com/2019/07/04/ROM-9-0-S10S10-猎户座通刷国行特性SE7-增强设置稳定Norma-v3/</id>
+    <published>2019-07-04T08:53:09.000Z</published>
+    <updated>2019-07-04T08:53:40.711Z</updated>
+    
+    <content type="html"><![CDATA[<p>ROM版本    android 9.0<br>ROM作者    Norma<br>机型      G973N、G973F、G973F/DS<br>G975N、G975F、G9735/DS<br>发布时间    2019年07月04日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/priv-app/2018开头文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>我的微博名字Norma_ROM</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>特别鸣谢：</p><p>未来团队,Soul团队、DK、MAN、累累、极光团队、排名不分前后，真的很感谢你们。<br>感谢 “逼哥” 为本次ROM制作做出的重大贡献！！！</p><p>ROM：<br>猎户座通刷<br>韩版、欧版、亚太S10       G973N、G973F、G973F/DS<br>韩版、欧版、亚太S10+     G975N、G975F、G9735/DS<br>基于G975FXXU1ASD5定制<br>Mgisk19.0<br>精简系统自带无用程序<br>禁用knox<br>国行csc配置黄页归属地等支持<br>国行智能管理器配置<br>国行智能锁屏壁纸<br>版本号改成国行G9750<br>更新bixby支持国行控制<br>破解应用分身支持安装任何程序<br>去除第三方字体限制<br>主题永久免费试用<br>增加增强设置<br>状态栏虚拟按键<br>时间日期等调整<br>电池样式自定义<br>网速显示<br>状态栏运营商<br>锁屏运营商<br>锁屏小插件（显示各种插件在锁屏）<br>导航栏高度调整（调整到0能全屏）<br>bixby键自定义功能<br>禁用官方data分区加密<br>禁用一些官方限制<br>修复官方默认自动亮度问题</p><p>V2更新：<br>修复上一版蓝牙连接问题<br>修复上一版magisk问题已经更新到7.1.2<br>（Magisk19.2可以在ROM里直接更新到最新）<br>下拉新增农历显示带开关<br>农历格式显示等<br>新增高级重启菜单<br>支持手电筒、快速重启、线刷模式、卡刷模式（卡刷在S10这里相当于进入root系统进入twrp还需要组合键）截图录屏等<br>增强设置一些开机默认调整<br>更新智能管理器最新版修复应用权限无法打开问题<br>增加国行谷歌框架服务Magisk模块<br>一些其他调整合更新</p><p>V3更新：<br>更新G975FXXU1ASE7底包<br>更新magisk<br>新增增强下拉按钮个数 6.7.8自定义<br>新增横向下拉个数调节<br>新增下拉流量统计开关和位置调整等<br>更新高级重启菜单样式<br>智能管理器更新国行最新不会出现应用许可无法打开问题<br>增强设置新增桌面双击手势动作（双击锁屏等功能）<br>新增按键自定义功能增加 bixby键、最近任务、主页、退回键自定义<br>添加浮动信息支持<br>首次开机需要点击增强设置然后日期和下拉快捷按钮恢复正常</p><p>刷机方法：（下载地址网盘里有方法）<br>链接：<a href="https://pan.baidu.com/s/16vaQXldSN_SoDfmGno5C9g" target="_blank" rel="noopener">https://pan.baidu.com/s/16vaQXldSN_SoDfmGno5C9g</a><br>提取码：ihmd </p><p>部分机型twrp没有更新导致相机无法打开，请线刷我发的twrp。</p><p>刷完ROM之后不要选择重启手机，退回到主页选择重启手机即可</p><p>只要不进去twpr每次正常重启都会进入magiskroot系统无需组合键</p><p>感谢未来S10机型配置<br>感谢ianmacd  Geiti94 twrp<br>感谢magisk团队</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]</p><p>ROM:<br>云盘：<br>链接：<a href="https://pan.baidu.com/s/1Vz0NmljqI1SX7dRzxtoHNw" target="_blank" rel="noopener">https://pan.baidu.com/s/1Vz0NmljqI1SX7dRzxtoHNw</a> 提取码：bex5 </p><p>天翼：<br><a href="https://cloud.189.cn/t/AB3InmvQBvYv" target="_blank" rel="noopener">https://cloud.189.cn/t/AB3InmvQBvYv</a></p><p>[/hide]</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ROM版本    android 9.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型      G973N、G973F、G973F/DS&lt;br&gt;G975N、G975F、G9735/DS&lt;br&gt;发布时间    2019年07月04日&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;b
+      
+    
+    </summary>
+    
+    
+      <category term="s10" scheme="http://yoursite.com/tags/s10/"/>
+    
+  </entry>
   
   <entry>
     <title>[ROM][9.0]S8S8+国行高通正式版S9SP1移植S9杜比双音效相机广角P1</title>
@@ -499,32 +524,6 @@
     
     
       <category term="S7国际版" scheme="http://yoursite.com/tags/S7%E5%9B%BD%E9%99%85%E7%89%88/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>国际版S8移植S9</title>
-    <link href="http://yoursite.com/2018/05/15/%E5%9B%BD%E9%99%85%E7%89%88S8%E7%A7%BB%E6%A4%8DS9/"/>
-    <id>http://yoursite.com/2018/05/15/国际版S8移植S9/</id>
-    <published>2018-05-15T05:47:06.000Z</published>
-    <updated>2018-06-30T04:48:46.097Z</updated>
-    
-    <content type="html"><![CDATA[<p>ROM版本    android 8.0<br>ROM作者    Norma<br>机型    SM-G95XF/FD/N N950F/FDN  8895通刷<br>发布时间    2018年05月15日</p><blockquote><blockquote><blockquote><p>刷机必看</p></blockquote></blockquote></blockquote><p>免责声明:<br>1.本人发布的所有ROM仅用于个人技术研讨,最终解释权和所有权属于ROM原制作者.<br>2.本人不承担由于刷机失败造成的一切损。<br>3.ROM内置推广软件在system/app/开头1/2/3/4/5文件，希望大家打开联网支持使用两天，不喜欢用RE文件管理器进入system/app删除重启即可.<br>4.下载ROM前一定认准本人的百度云盘lijianjun4144<br>5.欢迎关注本人新浪微博反馈问题以及最新ROM资讯<br>点击关注</p><blockquote><blockquote><blockquote><p>ROM特点</p></blockquote></blockquote></blockquote><p>V1：<br>基于越南infinity-oreo底包内核（在此感谢）<br>移植国行G9600ZCU1ARBH<br>S8官方相机功能<br>纯官方S9<br>增强设置自定义添加<br>更多S9功能自己体验</p><p>s9移植V2更新：<br>基于官方最新N950FXXU3CRC1底包<br>移植S9+国行最新G9650ZCU1ARC2<br>修复上一版耳机问题<br>修复Spen翻译 完整的N8 SPEN功能<br>增加增强设置<br>通话记录显示归属地<br>时间位置<br>按键自定义调整等等<br>一些其他调整自己体验</p><p>S9v3更新：<br>新增高级重启菜单支持<br>修复联通卡移动网络切换2G后无法切换其他网络问题<br>网络信号配置调整<br>游戏配置修改为官方<br>机型版本号修改为s8官方<br>bixby视觉更新可以正常使用<br>修复wifi热点打开重启问题<br>自动亮度灵敏度调整<br>更快的面部识别和虹膜解锁<br>更新内核NK内核解决部分机型twrp无法识别内部储存问题<br>修复发热和耗电快问题<br>一些其他调整</p><p>S9V4更新：<br>移植最新S9+ G9650ZCU2ARC6<br>安全补丁更新到最新<br>新增下拉农历<br>增强设置自定义按键代码更新<br>支持bixby按键自定义<br>修复息屏提醒时间显示会消失问题<br>SSRM机型配置调整<br>修复手写输入无效问题<br>更新magisk 16.3<br>新增S9相机贴纸<br>一些其他修改调整</p><p>V5更新：<br>修复强光下亮度问题<br>修复缓解耗电发热问题<br>修复SD卡储存可能出现的问题<br>增强设置更新新功能<br>导航栏调整到0然后开启图标下沉开关即可隐藏导航栏<br>移植S9bixby视觉（新功能）<br>更换magisk为supersu pro版<br>S9信息支持归属地显示<br>修复fd双卡信号问题<br>王者支持VT模式<br>机型版本号修改为G9650<br>S8S8+内核更新NX R8<br>一些其他调整</p><p>V6更新:<br>新增aroma刷机脚本机型选项<br>移植国际版S9<br>支持S9杜比音效<br>S9相机AR表情效果<br>移植S9相机（Note8放大2x功能远距离正常近距离会太大）<br>新增通话挂机延迟设置<br>游戏性能优化<br>流畅吃鸡王者稳定高帧<br>更新内核NK219（可以自己换喜欢的内核）</p><p>V7更新：<br>magisk更换supersu（magisk会导致部分机器无法开机）<br>修复Note8相机问题<br>S8S8+无需刷相机补丁<br>修复自动亮度强光下黑屏问题<br>修复设置辅助功能服务开启fc问题<br>修复全局杜比音效<br>修复异常发热问题<br>跑马灯边框调整机型对应<br>S8S8+相机驱动更新<br>修复部分第三方字体无法安装问题<br>一些其他修改和调整</p><p>V8更新：<br>换回S9国行底包<br>更新S9国行杜比音效驱动<br>修复虹膜面部解锁慢的问题<br>删除google服务框架（会导致耗电需要的可以自己单刷框架）<br>机型框架调整官方版本配置<br>修复内存储存分区读取问题包含otg和外置sd卡<br>省电优化调整<br>王者稳定60帧吃鸡流畅（刺激战场和全军出击）<br>增强设置新增虚拟按键横屏关闭和开启菜单（当虚拟按键高度调整到0时也希望横屏完全隐藏）<br>S8FD版本通话杂音修复<br>信号居左更新修复之前可能会显示两个信号问题<br>一些其他调整和修复</p><p>错误：<br>锁屏设置里的<br>智能扫描（硬件不支持不能同时面部和虹膜一起）</p><blockquote><blockquote><blockquote><p>下载地址</p></blockquote></blockquote></blockquote><p>[hide]<br>ROM:<br>MD5: D32519542551CE0772A9883C913FA510<br>SHA1: E0B34C2AEAED4698AE7E2C1104BA1E258F361DB8<br>CRC32: 6D3B7E78</p><p>天翼云盘：<br><a href="https://cloud.189.cn/t/3IZvYvAZzyIb" target="_blank" rel="noopener">https://cloud.189.cn/t/3IZvYvAZzyIb</a></p><p>云盘：</p><p><a href="https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1hnUngYtK5oL8mTbdIW4GnQ</a></p><p>内置应用程序希望大家帮忙联网使用两天后再删除，感谢大家的支持</p><blockquote><blockquote><blockquote><p>截图赏析</p></blockquote></blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;ROM版本    android 8.0&lt;br&gt;ROM作者    Norma&lt;br&gt;机型    SM-G95XF/FD/N N950F/FDN  8895通刷&lt;br&gt;发布时间    2018年05月15日&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blo
-      
-    
-    </summary>
-    
-    
-      <category term="国际版S8" scheme="http://yoursite.com/tags/%E5%9B%BD%E9%99%85%E7%89%88S8/"/>
     
   </entry>
   
